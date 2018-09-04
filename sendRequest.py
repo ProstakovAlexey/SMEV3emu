@@ -224,6 +224,15 @@ def send_request(text):
         print(colored('Выписки из ЕГРЮЛ по запросам органов государственной власти', 'blue'))
         response = get_file(os.path.join('Шаблоны', 'Ответы',
                                          'Выписки из ЕГРЮЛ по запросам органов государственной власти'))
+    # Выписки из ЕГРЮЛ по запросам органов государственной власти
+    elif text.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendRequestRequest/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedRequestData/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1}MessagePrimaryContent/'
+                   '{urn://x-artefacts-fns-nsvuidat/root/311-31/4.0.0}NSVUIDATRequest') is not None:
+        print(colored('Новые сведения в ЕГРЮЛ или ЕГРИП', 'blue'))
+        response = get_file(os.path.join('Шаблоны', 'Ответы',
+                                         'Новые сведения в ЕГРЮЛ или ЕГРИП'))
 
     # Неизвестный запрос, ответ на него не даем
     else:
@@ -235,6 +244,7 @@ def send_request(text):
         xmlns:ns3="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/faults/1.1"/>
         </soap:Body></soap:Envelope>
         '''
+
     # Атрибуты для заполнения ответа
 
     attr = {'MessageID': str(uuid.uuid1()), 'TransactionCode': str(uuid.uuid1()),
