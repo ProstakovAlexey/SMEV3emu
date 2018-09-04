@@ -254,7 +254,15 @@ def send_request(text):
         print(colored('Сведения о среднесписочной численности работников за предшествующий календарный год', 'blue'))
         response = get_file(os.path.join('Шаблоны', 'Ответы',
                                          'Среднесписочная численность работников'))
-
+    # Сведения о налич. (отсут) задолж-ти по уплате налогов, сбор., пеней, штраф
+    elif text.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendRequestRequest/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedRequestData/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1}MessagePrimaryContent/'
+                       '{urn://x-artefacts-fns-zadorg/root/548-04/4.0.4}ZadorgRequest'):
+        print(colored('Сведения о налич. (отсут) задолж-ти по уплате налогов', 'blue'))
+        response = get_file(os.path.join('Шаблоны', 'Ответы',
+                                         'Сведения о налич. (отсут) задолж-ти по уплате налогов'))
     # Неизвестный запрос, ответ на него не даем
     else:
         print(colored('Запрос с неизветсным URI', 'red'))
