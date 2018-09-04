@@ -6,7 +6,7 @@ import getRequest
 import getResponse
 import sendResponse
 import xml.etree.ElementTree as etree
-
+import time
 
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
@@ -38,7 +38,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         cl = int(self.headers['Content-Length'])
         sa = self.headers['SOAPAction']
         message = "Hello world!"
-
+        #time.sleep(1)
         post_body = self.rfile.read(cl).decode('utf-8')
         xml_tree = etree.fromstring(post_body)
         """По неизвестной мне причине Вадим не передает soapaction, поэтому эмулятор делаю с поиском по дереву
@@ -53,20 +53,26 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
             elif xml_tree.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
                                '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendResponseRequest'):
                 sa = '"urn:SendResponseRequest"'
+            elif xml_tree.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
+                               '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}GetResponseRequest'):
+                sa = '"urn:GetResponse"'
+            elif xml_tree.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
+                               '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendRequestRequest'):
+                sa = '"urn:SendRequest"'
 
         print('Метод:', sa)
         if sa == '"urn:Ack"':
             print("Принят запрос ACK - подтверждение приема")
             message = ask.get_ask()
         elif sa == '"urn:SendRequest"':
-            print('Принял SendRequest - отправка ответа')
-            message = sendRequest.send_request(post_body)
+            print('Принял SendRequest - отправка запроса поставщику')
+            message = sendRequest.send_request(xml_tree)
         elif sa == '"urn:GetRequest"':
             print('Принял GetRequest - получение запросов к нам')
             message = getRequest.get_request()
         elif sa == '"urn:GetResponse"':
-
-            message = getResponse.get_response(post_body)
+            print('Принял GetResponse - получение ответа на наш запрос')
+            message = getResponse.get_response()
         elif sa == '"urn:SendResponseRequest"':
             print('Принял SendResponse - отправка ответа')
             message = sendResponse.send_response(post_body)

@@ -20,4 +20,4 @@ def time_stamp():
     Выдаем метку времени, для печати на экране
     :return:
     """
-    return datetime.datetime.now().strftime("%Y-%M-%dT%H:%M:%S.000+03:00")
+    return datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S.000+03:00")
