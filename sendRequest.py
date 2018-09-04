@@ -3,6 +3,7 @@ import glob
 import random
 import uuid
 import os.path
+from termcolor import colored
 
 
 def get_file(dir_name):
@@ -182,9 +183,41 @@ def send_request(text):
                  '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedRequestData/'
                  '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1}MessagePrimaryContent/'
                  '{urn://x-artefacts-fns-vipip-tosmv-ru/311-15/4.0.5}FNSVipIPRequest'):
-        print('Запрос на Выписки из ЕГРИП по запросам органов государственной власти')
+        print(colored('Запрос на Выписки из ЕГРИП по запросам органов государственной власти', 'blue'))
         response = get_file(os.path.join('Шаблоны', 'Ответы', 'ЕГРИП по ИНН ФЛ'))
+    # Для организаций Сведения о состоянии расчетов по страх. взносам, пеням и штрафам (ЮЛ)
+    elif text.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
+                   '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendRequestRequest/'
+                   '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedRequestData/'
+                   '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1}MessagePrimaryContent/'
+                   '{http://fss.ru/smev-3/rasch_registration/1.0.2}SvedSostRaschRequest'):
+        print(colored('Запрос на Сведения о состоянии расчетов по страх. взносам, пеням и штрафам', 'blue'))
+        response = get_file(os.path.join('Шаблоны', 'Ответы',
+                                         'Cостоянии расчетов по страховым взносам пеням и штрафам'))
+    # Предоставление страхового номера индивидуального лицевого счёта (СНИЛС) застрахованного лица с
+    # учётом дополнительных сведений о месте рождения, документе, удостоверяющем личность
+    elif text.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
+                   '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendRequestRequest/'
+                   '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedRequestData/'
+                   '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1}MessagePrimaryContent/'
+                   '{http://kvs.pfr.com/snils-by-additionalData/1.0.1}SnilsByAdditionalDataRequest'):
+        print(colored('Предоставление страхового номера индивидуального лицевого счёта (СНИЛС) застрахованного лица '
+                      'с учётом дополнительных сведений о месте рождения, документе, удостоверяющем личность', 'blue'))
+        response = get_file(os.path.join('Шаблоны', 'Ответы', 'СНИЛС с доп. данными'))
+
+    # Об ИНН физических лиц на основании полных паспортных данных по единичному запросу органов исполнительной власти
+    elif text.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendRequestRequest/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedRequestData/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1}MessagePrimaryContent/'
+                       '{urn://x-artefacts-fns-inn-singular/root/270-18/4.0.1}FNSINNSingularRequest'):
+        print(colored('Предоставление ИНН физических лиц на основании полных паспортных данных по единичному запросу '
+                      'органов исполнительной власти', 'blue'))
+        response = get_file(os.path.join('Шаблоны', 'Ответы',
+                                         'ИНН физических лиц на основании полных паспортных данных'))
+    # Неизвестный запрос, ответ на него не даем
     else:
+        print(colored('Запрос с неизветсным URI', 'red'))
         response = '''<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
         <soap:Body><ns2:GetResponseResponse 
         xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1" 

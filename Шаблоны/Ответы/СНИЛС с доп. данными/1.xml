@@ -1,0 +1,16 @@
+<tns:SnilsByAdditionalDataResponse xmlns:tns="http://kvs.pfr.com/snils-by-additionalData/1.0.1" xmlns:smev="urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1" xmlns:pfr="http://common.kvs.pfr.com/1.0.0">
+   <tns:Snils>00000601555</tns:Snils>
+   <tns:BirthPlace>
+      <pfr:PlaceType>ОСОБОЕ</pfr:PlaceType>
+      <pfr:Settlement>ЗАГОРСК</pfr:Settlement>
+      <pfr:District>ЛЕНИНСКИЙ</pfr:District>
+      <pfr:Region>МОСКОВСКАЯ ОБЛАСТЬ</pfr:Region>
+      <pfr:Country>РФ</pfr:Country>
+   </tns:BirthPlace>
+   <smev:PassportRF>
+      <smev:Series>0005</smev:Series>
+      <smev:Number>777777</smev:Number>
+      <smev:IssueDate>1986-06-13</smev:IssueDate>
+      <smev:Issuer>ОВД</smev:Issuer>
+   </smev:PassportRF>
+</tns:SnilsByAdditionalDataResponse>

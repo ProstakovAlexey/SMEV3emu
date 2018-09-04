@@ -1,0 +1,10 @@
+<reg:SvedSostRaschResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:reg="http://fss.ru/smev-3/rasch_registration/1.0.2">
+	<reg:SvedSostRaschJurResponse>
+		<reg:region>00</reg:region>
+		<reg:organization>ФСС</reg:organization>
+		<reg:dateStart>1957-08-13</reg:dateStart>
+		<reg:innPayer>0000000000</reg:innPayer>
+		<reg:kppPayer>000000000</reg:kppPayer>
+		<reg:debtsPayer>true</reg:debtsPayer>
+	</reg:SvedSostRaschJurResponse>
+</reg:SvedSostRaschResponse>
