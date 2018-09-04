@@ -224,7 +224,7 @@ def send_request(text):
         print(colored('Выписки из ЕГРЮЛ по запросам органов государственной власти', 'blue'))
         response = get_file(os.path.join('Шаблоны', 'Ответы',
                                          'Выписки из ЕГРЮЛ по запросам органов государственной власти'))
-    # Выписки из ЕГРЮЛ по запросам органов государственной власти
+    # Новые сведения в ЕГРЮЛ или ЕГРИП
     elif text.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
                        '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendRequestRequest/'
                        '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedRequestData/'
@@ -233,6 +233,27 @@ def send_request(text):
         print(colored('Новые сведения в ЕГРЮЛ или ЕГРИП', 'blue'))
         response = get_file(os.path.join('Шаблоны', 'Ответы',
                                          'Новые сведения в ЕГРЮЛ или ЕГРИП'))
+
+    # Сведения об учете организации в налоговом органе по месту нахождения ее обособленного подразделения
+    elif text.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendRequestRequest/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedRequestData/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1}MessagePrimaryContent/'
+                       '{urn://x-artefacts-fns-uchorgop-tosmv-ru/370_68/4.0.1}FNSUchOrgOPRequest'):
+        print(colored('Сведения об учете организации в налоговом органе по месту нахождения ее'
+                      ' обособленного подразделения', 'blue'))
+        response = get_file(os.path.join('Шаблоны', 'Ответы',
+                                         'Сведения из НО по месту обособленного подразделения'))
+
+    # Сведения о среднесписочной численности работников за предшествующий календарный год
+    elif text.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendRequestRequest/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedRequestData/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1}MessagePrimaryContent/'
+                       '{urn://x-artefacts-fns-SRCHIS/082-2/4.0.1}RequestDocument'):
+        print(colored('Сведения о среднесписочной численности работников за предшествующий календарный год', 'blue'))
+        response = get_file(os.path.join('Шаблоны', 'Ответы',
+                                         'Среднесписочная численность работников'))
 
     # Неизвестный запрос, ответ на него не даем
     else:
