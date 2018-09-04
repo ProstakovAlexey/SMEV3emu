@@ -215,6 +215,16 @@ def send_request(text):
                       'органов исполнительной власти', 'blue'))
         response = get_file(os.path.join('Шаблоны', 'Ответы',
                                          'ИНН физических лиц на основании полных паспортных данных'))
+    # Выписки из ЕГРЮЛ по запросам органов государственной власти
+    elif text.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendRequestRequest/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedRequestData/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1}MessagePrimaryContent/'
+                       '{urn://x-artefacts-fns-vipul-tosmv-ru/311-14/4.0.5}FNSVipULRequest'):
+        print(colored('Выписки из ЕГРЮЛ по запросам органов государственной власти', 'blue'))
+        response = get_file(os.path.join('Шаблоны', 'Ответы',
+                                         'Выписки из ЕГРЮЛ по запросам органов государственной власти'))
+
     # Неизвестный запрос, ответ на него не даем
     else:
         print(colored('Запрос с неизветсным URI', 'red'))
