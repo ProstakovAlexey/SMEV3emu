@@ -1,0 +1,160 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<ns2:GetRequestResponse xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1" xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1" xmlns:ns3="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/faults/1.1">
+			<ns2:RequestMessage>
+				<ns2:Request Id="SIGNED_BY_SMEV">
+					<ns2:SenderProvidedRequestData Id="SIGNED_BY_CONSUMER">
+						<ns2:MessageID>{MessageID}</ns2:MessageID>
+						<ns2:ReferenceMessageID>{MessageID}</ns2:ReferenceMessageID>
+						<ns2:TransactionCode>ignore</ns2:TransactionCode>
+						<MessagePrimaryContent>
+							<FATALRequest:FATALRequest xmlns:FATALRequest="urn://x-artefacts-zags-fatal/root/112-04/4.0.2" xmlns="urn://x-artefacts-zags-fatal/root/112-04/4.0.2" xmlns:ns2="urn://x-artefacts-zags-fatal/types/4.0.2" ДатаСвед="2018-08-27" ИдСвед="999637ec-613f-41e3-aa23-f9f69e12ac36">
+								<СведРегСмерт ДатаЗапис="2018-08-16" НомерЗапис="0000000000000000283">
+									<ОрганЗАГС КодЗАГС="R1600000" НаимЗАГС="Управление записи актов гражданского состояния Кабинета Министров Республики Татарстан"/>
+									<СтатусЗаписи ДатаНачСтатус="2018-08-16" КодСтатус="01" НаимСтатус="Запись акта первичная"/>
+									<СведСвидет ДатаВыдСвидет="2018-08-16" НомерСвидет="200630" СерияСвидет="I-КА"/>
+									<ПрдСведРег>
+										<СведУмер НаимСтраны="Российская Федерация" ОКСМ="643" Пол="1">
+											<ФИОУмер Имя="Илья" Отчество="Владимирович" Фамилия="Лебедев"/>
+											<ДатаРожд>1995-12-19</ДатаРожд>
+											<МестоРожден КодСтраны="643" МестоТекст="г Москва" НаимСтраны="Российская Федерация" НаимСубъект="Москва г" Регион="77"/>
+											<МЖПослРФ АдрРФТекст="г Москва, ул 800-летия Москвы">
+												<АдрКЛАДР Дом="3" Кварт="33" КодРегион="77" НаимРегион="Москва г" Улица="800-летия Москвы ул"/>
+											</МЖПослРФ>
+											<УдЛичнФЛ ДатаДок="2018-08-01" КодВидДок="21" НаимДок="Паспорт гражданина Российской Федерации" СерНомДок="43 34 4444444"/>
+											<ДатаСмерт>2018-08-12</ДатаСмерт>
+											<МестоСмерт КодСтраны="643" МестоТекст="г Москва" НаимСтраны="Российская Федерация" НаимСубъект="Москва г" Регион="77"/>
+										</СведУмер>
+										<СведДокСмерт ДатаДок="2018-08-16" КодДок="57002" НаимДок="Справка о смерти (форма №11)">
+											<НаимОрг>Управление записи актов гражданского состояния Кабинета Министров Республики Татарстан</НаимОрг>
+										</СведДокСмерт>
+									</ПрдСведРег>
+								</СведРегСмерт>
+								<СведРегСмерт ДатаЗапис="2018-08-16" НомерЗапис="0000000000000000282">
+									<ОрганЗАГС КодЗАГС="R1600000" НаимЗАГС="Управление записи актов гражданского состояния Кабинета Министров Республики Татарстан"/>
+									<СтатусЗаписи ДатаНачСтатус="2018-08-16" КодСтатус="01" НаимСтатус="Запись акта первичная"/>
+									<СведСвидет ДатаВыдСвидет="2018-08-16" НомерСвидет="200629" СерияСвидет="I-КА"/>
+									<ПрдСведРег>
+										<СведУмер НаимСтраны="Российская Федерация" ОКСМ="643" Пол="1">
+											<ФИОУмер Имя="Сидор" Отчество="Сидорович" Фамилия="Сидоров"/>
+											<ДатаРожд>1995-12-14</ДатаРожд>
+											<МестоРожден КодСтраны="643" МестоТекст="г Москва" НаимСтраны="Российская Федерация" НаимСубъект="Москва г" Регион="77"/>
+											<МЖПослРФ АдрРФТекст="г Москва, ул 800-летия Москвы">
+												<АдрКЛАДР Дом="12" Кварт="21" КодРегион="77" НаимРегион="Москва г" Улица="800-летия Москвы ул"/>
+											</МЖПослРФ>
+											<УдЛичнФЛ ДатаДок="2018-07-30" КодВидДок="21" НаимДок="Паспорт гражданина Российской Федерации" СерНомДок="11 11 111111"/>
+											<ДатаСмерт>2018-08-14</ДатаСмерт>
+											<МестоСмерт КодСтраны="643" МестоТекст="г Москва" НаимСтраны="Российская Федерация" НаимСубъект="Москва г" Регион="77"/>
+										</СведУмер>
+										<СведДокСмерт ДатаДок="2018-08-16" КодДок="57002" НаимДок="Справка о смерти (форма №11)">
+											<НаимОрг>Управление записи актов гражданского состояния Кабинета Министров Республики Татарстан</НаимОрг>
+										</СведДокСмерт>
+									</ПрдСведРег>
+								</СведРегСмерт>
+								<СведРегСмерт ДатаЗапис="2018-08-16" НомерЗапис="0000000000000000281">
+									<ОрганЗАГС КодЗАГС="R1600000" НаимЗАГС="Управление записи актов гражданского состояния Кабинета Министров Республики Татарстан"/>
+									<СтатусЗаписи ДатаНачСтатус="2018-08-16" КодСтатус="01" НаимСтатус="Запись акта первичная"/>
+									<СведСвидет ДатаВыдСвидет="2018-08-16" НомерСвидет="200628" СерияСвидет="I-КА"/>
+									<ПрдСведРег>
+										<СведУмер НаимСтраны="Российская Федерация" ОКСМ="643" Пол="1">
+											<ФИОУмер Имя="-" Отчество="-" Фамилия="неизвестный"/>
+											<ДатаРожд>2001-01-01</ДатаРожд>
+											<УдЛичнФЛ КодВидДок="21" НаимДок="Паспорт гражданина Российской Федерации" СерНомДок="00 00 000000"/>
+											<ДатаСмерт>2018-08-27</ДатаСмерт>
+											<МестоСмерт КодСтраны="643" МестоТекст="Нет данных" НаимСтраны="Российская Федерация"/>
+										</СведУмер>
+										<СведДокСмерт ДатаДок="2018-08-16" КодДок="57002" НаимДок="Справка о смерти (форма №11)">
+											<НаимОрг>Управление записи актов гражданского состояния Кабинета Министров Республики Татарстан</НаимОрг>
+										</СведДокСмерт>
+									</ПрдСведРег>
+								</СведРегСмерт>
+								<СведРегСмерт ДатаЗапис="2018-08-16" НомерЗапис="0000000000000000279">
+									<ОрганЗАГС КодЗАГС="R1600000" НаимЗАГС="Управление записи актов гражданского состояния Кабинета Министров Республики Татарстан"/>
+									<СтатусЗаписи ДатаНачСтатус="2018-08-16" КодСтатус="01" НаимСтатус="Запись акта первичная"/>
+									<СведСвидет ДатаВыдСвидет="2018-08-16" НомерСвидет="200627" СерияСвидет="I-КА"/>
+									<ПрдСведРег>
+										<СведУмер НаимСтраны="Российская Федерация" ОКСМ="000" Пол="1">
+											<ФИОУмер Имя="Иван" Отчество="Иванович" Фамилия="Иванов"/>
+											<ДатаРожд>2018-08-13</ДатаРожд>
+											<УдЛичнФЛ КодВидДок="21" НаимДок="Паспорт гражданина Российской Федерации" СерНомДок="00 00 000000"/>
+											<ДатаСмерт>2018-08-27</ДатаСмерт>
+											<МестоСмерт КодСтраны="000" МестоТекст="Нет данных" НаимСтраны="Российская Федерация"/>
+										</СведУмер>
+										<СведДокСмерт ДатаДок="2018-08-16" КодДок="17001" НаимДок="Заявление о смерти (форма №21)">
+											<НаимОрг>Управление записи актов гражданского состояния Кабинета Министров Республики Татарстан</НаимОрг>
+										</СведДокСмерт>
+									</ПрдСведРег>
+								</СведРегСмерт>
+							</FATALRequest:FATALRequest>
+						</MessagePrimaryContent>
+					</ns2:SenderProvidedRequestData>
+					<ns2:MessageMetadata>
+						<ns2:MessageId>{MessageID}</ns2:MessageId>
+						<ns2:MessageType>BROADCAST</ns2:MessageType>
+						<ns2:Sender>
+							<ns2:Mnemonic>FNS002</ns2:Mnemonic>
+							<ns2:HumanReadableName>ФГИС "ЕГР ЗАГС"</ns2:HumanReadableName>
+						</ns2:Sender>
+						<ns2:SendingTimestamp>{Timestamp}</ns2:SendingTimestamp>
+						<ns2:DestinationName>unknown</ns2:DestinationName>
+						<ns2:Recipient>
+							<ns2:Mnemonic>123701_3T</ns2:Mnemonic>
+							<ns2:HumanReadableName>АИС ЭСРН МО</ns2:HumanReadableName>
+						</ns2:Recipient>
+						<ns2:SupplementaryData>
+							<ns2:DetectedContentTypeName>not detected</ns2:DetectedContentTypeName>
+							<ns2:InteractionType>NotDetected</ns2:InteractionType>
+						</ns2:SupplementaryData>
+						<ns2:DeliveryTimestamp>{Timestamp}</ns2:DeliveryTimestamp>
+						<ns2:Status>responseIsDelivered</ns2:Status>
+					</ns2:MessageMetadata>
+					<ns2:ReplyTo/>
+					<ns2:SenderInformationSystemSignature>
+						<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+							<ds:SignedInfo>
+								<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+								<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411"/>
+								<ds:Reference URI="#SIGNED_BY_CONSUMER">
+									<ds:Transforms>
+										<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+										<ds:Transform Algorithm="urn://smev-gov-ru/xmldsig/transform"/>
+									</ds:Transforms>
+									<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr3411"/>
+									<ds:DigestValue>GBoG6VwG8HAkiv+EiuwN/7vvllCUzvKlIJXgbYRBpA0=</ds:DigestValue>
+								</ds:Reference>
+							</ds:SignedInfo>
+							<ds:SignatureValue>sLtfKDzhM3jpmtUe3ua+zJV6lOmIFY2NgnQMQH56BebzJlYpmkQO/X0+Co3aLHwEWRvGNRBE5cJussI8kglXpg==</ds:SignatureValue>
+							<ds:KeyInfo>
+								<ds:X509Data>
+									<ds:X509Certificate>MIIIdjCCCCWgAwIBAgIQDqptnzag0oDnEWzs2PfURzAIBgYqhQMCAgMwggEhMSAwHgYJKoZIhvcNAQkBFhFtbnMxMDYyNUBuYWxvZy5ydTEYMBYGBSqFA2QBEg0xMDQ3NzA3MDMwNTEzMRowGAYIKoUDA4EDAQESDDAwNzcwNzMyOTE1MjELMAkGA1UEBhMCUlUxGTAXBgNVBAgMENCzLiDQnNC+0YHQutCy0LAxFTATBgNVBAcMDNCc0L7RgdC60LLQsDEpMCcGA1UECQwg0YPQuy4g0J3QtdCz0LvQuNC90L3QsNGPLCDQtC4gMjMxPzA9BgNVBAoMNtCk0LXQtNC10YDQsNC70YzQvdCw0Y8g0L3QsNC70L7Qs9C+0LLQsNGPINGB0LvRg9C20LHQsDEcMBoGA1UEAwwT0KTQndChINCg0L7RgdGB0LjQuDAeFw0xNzEyMjkwNzM1NTdaFw0xODEyMjkwNzQ1NTdaMIIBcDEWMBQGBSqFA2QDEgswMjYwNjQzODczNTEYMBYGBSqFA2QBEg0xMDQ3Nzk3MDgzODYxMRowGAYIKoUDA4EDAQESDDAwNzczMzUzNTczMDEjMCEGCSqGSIb3DQEJARYUbWljb2RAbTk5NjUubmFsb2cucnUxCzAJBgNVBAYTAlJVMRUwEwYDVQQIDAzQnNC+0YHQutCy0LAxFTATBgNVBAcMDNCc0L7RgdC60LLQsDFBMD8GA1UECQw40J/QvtGF0L7QtNC90YvQuSDQv9GA0L7QtdC30LQg0LTQvtC80L7QstC70LDQtNC10L3QuNC1IDMxLTArBgNVBAoMJNCc0Jgg0KTQndChINCg0L7RgdGB0LjQuCDQv9C+INCm0J7QlDEfMB0GA1UECwwW0KDRg9C60L7QstC+0LTRgdGC0LLQvjEtMCsGA1UEAwwk0JzQmCDQpNCd0KEg0KDQvtGB0YHQuNC4INC/0L4g0KbQntCUMGMwHAYGKoUDAgITMBIGByqFAwICJAAGByqFAwICHgEDQwAEQBs7k6bPg0SPN2IXheFLre20usxAoRkfCG8wvguD/JPOaaiEmUGMMek8Avi150CrcYVv9syHbQ/fkUIWSFoyQD2jggTiMIIE3jAOBgNVHQ8BAf8EBAMCBPAwHQYDVR0OBBYEFKelTr0X1gg4NaeI9kIQNSqUgKeJMDIGCSsGAQQBgjcVBwQlMCMGGyqFAwICMgEJh8OkLY6IOYTJnm+1gS+DiSL2YwIBAQIBADCCAWMGA1UdIwSCAVowggFWgBQWPUKQvwqciBdmuSZPkoRwo9cF26GCASmkggElMIIBITEaMBgGCCqFAwOBAwEBEgwwMDc3MTA0NzQzNzUxGDAWBgUqhQNkARINMTA0NzcwMjAyNjcwMTEeMBwGCSqGSIb3DQEJARYPZGl0QG1pbnN2eWF6LnJ1MTwwOgYDVQQJDDMxMjUzNzUg0LMuINCc0L7RgdC60LLQsCDRg9C7LiDQotCy0LXRgNGB0LrQsNGPINC0LjcxLDAqBgNVBAoMI9Cc0LjQvdC60L7QvNGB0LLRj9C30Ywg0KDQvtGB0YHQuNC4MRUwEwYDVQQHDAzQnNC+0YHQutCy0LAxHDAaBgNVBAgMEzc3INCzLiDQnNC+0YHQutCy0LAxCzAJBgNVBAYTAlJVMRswGQYDVQQDDBLQo9CmIDEg0JjQoSDQk9Cj0KaCEQSoHkAFqRhcguYRx+1NI2UxMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDAdBgNVHSAEFjAUMAgGBiqFA2RxATAIBgYqhQNkcQIwKwYDVR0QBCQwIoAPMjAxNzEyMjkwNzM1NTZagQ8yMDE4MTIyOTA3MzU1NlowggE3BgUqhQNkcASCASwwggEoDCjQn9CQ0JrQnCAi0JrRgNC40L/RgtC+0J/RgNC+IEhTTSIgdi4gMS4wDFrQn9CQ0JogItCj0LTQvtGB0YLQvtCy0LXRgNGP0Y7RidC40Lkg0YbQtdC90YLRgCAi0JrRgNC40L/RgtC+0J/RgNC+INCj0KYiINCy0LXRgNGB0LjQuCAyLjAMT9Ch0LXRgNGC0LjRhNC40LrQsNGCINGB0L7QvtGC0LLQtdGC0YHRgtCy0LjRjyDihJYg0KHQpC8xMjEtMjQxNCDQvtGCIDE3LjA2LjIwMTQMT9Ch0LXRgNGC0LjRhNC40LrQsNGCINGB0L7QvtGC0LLQtdGC0YHRgtCy0LjRjyDihJYg0KHQpC8xMjgtMjg4MSDQvtGCIDEyLjA0LjIwMTYwPwYFKoUDZG8ENgw00KHQmtCX0JggItCa0YDQuNC/0YLQvtCf0YDQviBDU1AiICjQstC10YDRgdC40Y8gNC4wKTCBogYDVR0fBIGaMIGXMEqgSKBGhkRodHRwOi8vYzAwMDAtYXBwMDA1L2NkcC8xNjNkNDI5MGJmMGE5Yzg4MTc2NmI5MjY0ZjkyODQ3MGEzZDcwNWRiLmNybDBJoEegRYZDaHR0cDovL3VjLm5hbG9nLnJ1L2NkcC8xNjNkNDI5MGJmMGE5Yzg4MTc2NmI5MjY0ZjkyODQ3MGEzZDcwNWRiLmNybDCBhQYIKwYBBQUHAQEEeTB3MDoGCCsGAQUFBzAChi5odHRwOi8vYzAwMDAtYXBwMDA1L2NydC9jYV9mbnNfcnVzc2lhXzIwMTcuY3J0MDkGCCsGAQUFBzAChi1odHRwOi8vdWMubmFsb2cucnUvY3J0L2NhX2Zuc19ydXNzaWFfMjAxNy5jcnQwCAYGKoUDAgIDA0EANsKmvfLlkkNStUQjJvBelG0nr9L/vHZrD6QbS4wR8F2/eeOqcyF62lQGy7VpnYyh+5edl8HG7O2c7Q8uzC64eA==</ds:X509Certificate>
+								</ds:X509Data>
+							</ds:KeyInfo>
+						</ds:Signature>
+					</ns2:SenderInformationSystemSignature>
+				</ns2:Request>
+				<ns2:SMEVSignature>
+					<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+						<ds:SignedInfo>
+							<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+							<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411"/>
+							<ds:Reference URI="#SIGNED_BY_SMEV">
+								<ds:Transforms>
+									<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+									<ds:Transform Algorithm="urn://smev-gov-ru/xmldsig/transform"/>
+								</ds:Transforms>
+								<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr3411"/>
+								<ds:DigestValue>IK03ln23y2zHVdp7J5p1i5Aghhu4zZ4J45UIwD6FSNA=</ds:DigestValue>
+							</ds:Reference>
+						</ds:SignedInfo>
+						<ds:SignatureValue>KMFeFjULYK9HRul8kpFXDUxkwpq63mZkUVQ2D3Pcs3gqqgLDHA17rd9jdCxdJ0EtJfhttaUEp+zk4cIskgpksQ==</ds:SignatureValue>
+						<ds:KeyInfo>
+							<ds:X509Data>
+								<ds:X509Certificate>MIIH2DCCB4egAwIBAgIRAXILAVZQAHCj6BHaIfbqMnEwCAYGKoUDAgIDMIIBRjEYMBYGBSqFA2QBEg0xMjM0NTY3ODkwMTIzMRowGAYIKoUDA4EDAQESDDAwMTIzNDU2Nzg5MDEpMCcGA1UECQwg0KHRg9GJ0LXQstGB0LrQuNC5INCy0LDQuyDQtC4gMjYxFzAVBgkqhkiG9w0BCQEWCGNhQHJ0LnJ1MQswCQYDVQQGEwJSVTEYMBYGA1UECAwPNzcg0JzQvtGB0LrQstCwMRUwEwYDVQQHDAzQnNC+0YHQutCy0LAxJDAiBgNVBAoMG9Ce0JDQniDQoNC+0YHRgtC10LvQtdC60L7QvDEwMC4GA1UECwwn0KPQtNC+0YHRgtC+0LLQtdGA0Y/RjtGJ0LjQuSDRhtC10L3RgtGAMTQwMgYDVQQDDCvQotC10YHRgtC+0LLRi9C5INCj0KYg0KDQotCaICjQoNCi0JvQsNCx0YEpMB4XDTE4MDMwNzA3Mjc1M1oXDTE5MDMwNzA3Mzc1M1owggELMR8wHQYJKoZIhvcNAQkCDBDQotCh0JzQrdCSM1/QmtCaMRowGAYIKoUDA4EDAQESDDAwNzcwNzA0OTM4ODEYMBYGBSqFA2QBEg0xMDI3NzAwMTk4NzY3MSgwJgYDVQQKDB/Qn9CQ0J4gwqvQoNC+0YHRgtC10LvQtdC60L7QvMK7MSYwJAYDVQQHDB3QodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQszEpMCcGA1UECAwgNzgg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMxCzAJBgNVBAYTAlJVMSgwJgYDVQQDDB/Qn9CQ0J4gwqvQoNC+0YHRgtC10LvQtdC60L7QvMK7MGMwHAYGKoUDAgITMBIGByqFAwICJAAGByqFAwICHgEDQwAEQMC71XesoJAavwGJgMlhlPywcaFx3HYPwMUIYBhtoglDW3BhQUzgIXFQ6uvD7FUshBl38VH+AXZM/BkzGGzpzFSjggSDMIIEfzAOBgNVHQ8BAf8EBAMCBPAwHQYDVR0OBBYEFItxgSnIqbor48DVSfsV11JpIwXDMIIBiAYDVR0jBIIBfzCCAXuAFD7vGT8PuXmw8eYpIaPkuZW5pe6QoYIBTqSCAUowggFGMRgwFgYFKoUDZAESDTEyMzQ1Njc4OTAxMjMxGjAYBggqhQMDgQMBARIMMDAxMjM0NTY3ODkwMSkwJwYDVQQJDCDQodGD0YnQtdCy0YHQutC40Lkg0LLQsNC7INC0LiAyNjEXMBUGCSqGSIb3DQEJARYIY2FAcnQucnUxCzAJBgNVBAYTAlJVMRgwFgYDVQQIDA83NyDQnNC+0YHQutCy0LAxFTATBgNVBAcMDNCc0L7RgdC60LLQsDEkMCIGA1UECgwb0J7QkNCeINCg0L7RgdGC0LXQu9C10LrQvtC8MTAwLgYDVQQLDCfQo9C00L7RgdGC0L7QstC10YDRj9GO0YnQuNC5INGG0LXQvdGC0YAxNDAyBgNVBAMMK9Ci0LXRgdGC0L7QstGL0Lkg0KPQpiDQoNCi0JogKNCg0KLQm9Cw0LHRgSmCEQFyCwFWUAC5s+cRzzq+NHegMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDAnBgkrBgEEAYI3FQoEGjAYMAoGCCsGAQUFBwMCMAoGCCsGAQUFBwMEMB0GA1UdIAQWMBQwCAYGKoUDZHEBMAgGBiqFA2RxAjArBgNVHRAEJDAigA8yMDE4MDMwNzA3Mjc1M1qBDzIwMTkwMzA3MDcyNzUzWjCCATQGBSqFA2RwBIIBKTCCASUMKyLQmtGA0LjQv9GC0L7Qn9GA0L4gQ1NQIiAo0LLQtdGA0YHQuNGPIDMuOSkMLCLQmtGA0LjQv9GC0L7Qn9GA0L4g0KPQpiIgKNCy0LXRgNGB0LjQuCAyLjApDGPQodC10YDRgtC40YTQuNC60LDRgiDRgdC+0L7RgtCy0LXRgtGB0YLQstC40Y8g0KTQodCRINCg0L7RgdGB0LjQuCDihJYg0KHQpC8xMjQtMjUzOSDQvtGCIDE1LjAxLjIwMTUMY9Ch0LXRgNGC0LjRhNC40LrQsNGCINGB0L7QvtGC0LLQtdGC0YHRgtCy0LjRjyDQpNCh0JEg0KDQvtGB0YHQuNC4IOKEliDQodCkLzEyOC0yODgxINC+0YIgMTIuMDQuMjAxNjA2BgUqhQNkbwQtDCsi0JrRgNC40L/RgtC+0J/RgNC+IENTUCIgKNCy0LXRgNGB0LjRjyAzLjkpMGUGA1UdHwReMFwwWqBYoFaGVGh0dHA6Ly9jZXJ0ZW5yb2xsLnRlc3QuZ29zdXNsdWdpLnJ1L2NkcC8zZWVmMTkzZjBmYjk3OWIwZjFlNjI5MjFhM2U0Yjk5NWI5YTVlZTkwLmNybDBXBggrBgEFBQcBAQRLMEkwRwYIKwYBBQUHMAKGO2h0dHA6Ly9jZXJ0ZW5yb2xsLnRlc3QuZ29zdXNsdWdpLnJ1L2NkcC90ZXN0X2NhX3J0bGFiczIuY2VyMAgGBiqFAwICAwNBAAfuLimwLO1RNL+ekh4hgnPu+yyLSiF2xGN4yZqWeA4d5VKU2zxveBMmSb4nvJFZ/3Qod1aQDdlgTRObLhKnEO8=</ds:X509Certificate>
+							</ds:X509Data>
+						</ds:KeyInfo>
+					</ds:Signature>
+				</ns2:SMEVSignature>
+			</ns2:RequestMessage>
+		</ns2:GetRequestResponse>
+	</soap:Body>
+</soap:Envelope>

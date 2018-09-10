@@ -24,6 +24,7 @@ def get_request():
 """
         for sh in glob.glob(os.path.join('Шаблоны', 'Запросы к нам', '*.xml')):
             shutil.copy(sh, dir)
+            pass
     else:
         with open(requests_list[0], mode='r', encoding='utf-8') as fp:
             message = fp.read()
