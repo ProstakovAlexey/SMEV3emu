@@ -1,5 +1,6 @@
 import datetime
 import re
+import random
 sh = re.compile('<\S{0,}messageid>(.*?)</\S{0,}messageid>', re.S)
 
 
@@ -21,3 +22,14 @@ def time_stamp():
     :return:
     """
     return datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S.000+03:00")
+
+
+def case_num(n=6, init=0):
+    '''Возвращает случайный номер состоящий из n цифр'''
+    if init != 0:
+        random.seed(init)
+    result = ''
+    for i in range(0, n):
+        s = random.randint(0, 9)
+        result += str(s)
+    return result

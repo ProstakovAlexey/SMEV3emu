@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header/>
+	<SOAP-ENV:Body>
+		<GetRequestResponse xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1" xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1" xmlns:ns3="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/faults/1.1" xmlns:ns4="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/routing/1.3">
+			<RequestMessage>
+				<Request xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1" Id="SIGNED_BY_SMEV">
+					<ns0:SenderProvidedRequestData xmlns:ns0="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1" Id="SIGNED_BY_CONSUMER">
+						<ns0:MessageID>{MessageID}</ns0:MessageID>
+						<ns0:ReferenceMessageID>{MessageID}</ns0:ReferenceMessageID>
+						<ns0:TransactionCode>ignore</ns0:TransactionCode>
+						<ns1:MessagePrimaryContent xmlns:ns1="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+							<ns:FormData oktmo="66701000" xmlns:ns="http://epgu.gosuslugi.ru/hub/utilitypaymentsubsidy/3.1.2">
+								<ns:orderId>000004</ns:orderId>
+								<ns:ServicesType>-1000382223</ns:ServicesType>
+								<ns:Subservice code="nazn">Предоставление мер социальной поддержки по оплате жилого помещения и коммунальных услуг</ns:Subservice>
+								<ns:Organization code="508">Город Смоленск</ns:Organization>
+								<ns:bookId>f49d3941-e74d-11e8-96d0-e0d55ea0b718</ns:bookId>
+								<ns:BenefitsInfo>
+									<ns:BenefitInfo>
+										<ns:BenefitCategory code="invalid">Граждане</ns:BenefitCategory>
+										<ns:BenefitDocName code="15">Удостоверение</ns:BenefitDocName>
+										<ns:BenefitDocSeries>12</ns:BenefitDocSeries>
+										<ns:BenefitDocNumber>123456</ns:BenefitDocNumber>
+										<ns:BenefitDocIssueDate>2015-01-01</ns:BenefitDocIssueDate>
+										<ns:BenefitDocIssued>Фонд социальной защиты населения</ns:BenefitDocIssued>
+									</ns:BenefitInfo>
+								</ns:BenefitsInfo>
+								<ns:DelegateInfo>
+									<ns:DelegateCategory code="1">Родитель</ns:DelegateCategory>
+									<ns:DelegateSurname>Иванов</ns:DelegateSurname>
+									<ns:DelegateName>Иван</ns:DelegateName>
+									<ns:DelegateMiddleName>Иванович</ns:DelegateMiddleName>
+									<ns:DelegateBirthDate>1970-09-10</ns:DelegateBirthDate>
+									<ns:DelegateSex>Male</ns:DelegateSex>
+									<ns:DelegateSNILS>000-102-103 55</ns:DelegateSNILS>
+									<ns:DelegatePhone>+7(999)9999999</ns:DelegatePhone>
+									<ns:DelegateEmail>test@test.ru</ns:DelegateEmail>
+									<ns:DelegateIdentityDocInfo>
+										<ns:DelegateIdentityDocName code="1">Паспорт гражданина РФ</ns:DelegateIdentityDocName>
+										<ns:DelegateIdentityDocSeries>6003</ns:DelegateIdentityDocSeries>
+										<ns:DelegateIdentityDocNumber>586839</ns:DelegateIdentityDocNumber>
+										<ns:DelegateIdentityDocIssueDate>2007-09-10</ns:DelegateIdentityDocIssueDate>
+										<ns:DelegateIdentityDocIssueCode>000009</ns:DelegateIdentityDocIssueCode>
+										<ns:DelegateIdentityDocIssued>Отделением УФМС России</ns:DelegateIdentityDocIssued>
+									</ns:DelegateIdentityDocInfo>
+									<ns:DelegateCredentialsDocInfo>
+										<ns:DelegateCredentialsDocName code="1">Свидетельство о рождении</ns:DelegateCredentialsDocName>
+										<ns:DelegateCredentialsDocSeries>1-ИК</ns:DelegateCredentialsDocSeries>
+										<ns:DelegateCredentialsDocNumber>600300</ns:DelegateCredentialsDocNumber>
+										<ns:DelegateCredentialsDocDate>1993-10-20</ns:DelegateCredentialsDocDate>
+										<ns:DelegateCredentialsDocIssued>Отделение ЗАГС г. Москвы</ns:DelegateCredentialsDocIssued>
+									</ns:DelegateCredentialsDocInfo>
+									<ns:JobInfo>
+										<ns:Work>ЖЭК</ns:Work>
+										<ns:PositionWork>Дворник</ns:PositionWork>
+									</ns:JobInfo>		
+									<ns:IncomeInfo>
+										<ns:Income>
+											<ns:IncomeType code="1">Заработная плата</ns:IncomeType>
+											<ns:IncomeDocName code="1">Справка с основного места работы и со всех мест дополнительной работы о доходах</ns:IncomeDocName>
+											<ns:IncomeDocSeries/>
+											<ns:IncomeDocNumber>15</ns:IncomeDocNumber>
+											<ns:IncomeDocIssueDate>2016-11-10</ns:IncomeDocIssueDate>
+											<ns:IncomeDocIssued>Бухгалтерия</ns:IncomeDocIssued>
+										</ns:Income>
+										<ns:IncomeSum>4000.00</ns:IncomeSum>
+									</ns:IncomeInfo>			
+								</ns:DelegateInfo>
+								<ns:PersonInfo>
+									<ns:PersonSurname>Иванов</ns:PersonSurname>
+									<ns:PersonName>Николай</ns:PersonName>
+									<ns:PersonMiddleName>Иванович</ns:PersonMiddleName>
+									<ns:PersonBirthDate>1993-10-20</ns:PersonBirthDate>
+									<ns:PersonSex>Male</ns:PersonSex>
+									<ns:PersonSNILS>000-102-103 44</ns:PersonSNILS>
+									<ns:PersonPhone>+7(123)1234567</ns:PersonPhone>
+									<ns:PersonEmail>test@test.ru</ns:PersonEmail>
+									<ns:PersonIdentityDocInfo>
+										<ns:PersonIdentityDocName code="1">Паспорт гражданина РФ</ns:PersonIdentityDocName>
+										<ns:PersonIdentityDocSeries>6004</ns:PersonIdentityDocSeries>
+										<ns:PersonIdentityDocNumber>586830</ns:PersonIdentityDocNumber>
+										<ns:PersonIdentityDocIssueDate>2007-09-10</ns:PersonIdentityDocIssueDate>
+										<ns:PersonIdentityDocIssueCode>000009</ns:PersonIdentityDocIssueCode>
+										<ns:PersonIdentityDocIssued>Отделением УФМС России</ns:PersonIdentityDocIssued>
+										<ns:Citizenship>Российская Федерация</ns:Citizenship>
+										<ns:BirthCountry>Российская Федерация</ns:BirthCountry>
+										<ns:BirthPlace>г. Москва</ns:BirthPlace>
+									</ns:PersonIdentityDocInfo>
+									<ns:AddressInfo>
+										<ns:RegistrationAddress>
+											<ns:FullAddress>121351, Москва г., Бобруйская ул., 4 д., 2 корп.</ns:FullAddress>
+											<ns:Index>121351</ns:Index>
+											<ns:Region code="0c5b2444-70a0-4932-980c-b4dc0d3f02b5">г. Москва</ns:Region>
+											<ns:Area code=""/>
+											<ns:City code=""/>
+											<ns:CityArea code=""/>
+											<ns:Place code=""/>
+											<ns:Street code="585eec0b-314c-4309-a497-3fe09300e903">ул. Бобруйская</ns:Street>
+											<ns:AdditionalArea code=""/>
+											<ns:AdditionalStreet code=""/>
+											<ns:House code="5956b056-0d23-4f59-9c52-f561968bdda0">4</ns:House>
+											<ns:Building1>2</ns:Building1>
+											<ns:Building2/>
+											<ns:Apartment>23</ns:Apartment>
+										</ns:RegistrationAddress>
+										<ns:RegistrationDate>2013-02-01</ns:RegistrationDate>
+										<ns:ActualAddress>
+											<ns:FullAddress>121351, Москва г., Бобруйская ул., 4 д., 2 корп.</ns:FullAddress>
+											<ns:Index>121351</ns:Index>
+											<ns:Region code="0c5b2444-70a0-4932-980c-b4dc0d3f02b5">г. Москва</ns:Region>
+											<ns:Area code=""/>
+											<ns:City code=""/>
+											<ns:CityArea code=""/>
+											<ns:Place code=""/>
+											<ns:Street code="585eec0b-314c-4309-a497-3fe09300e903">ул. Бобруйская</ns:Street>
+											<ns:AdditionalArea code=""/>
+											<ns:AdditionalStreet code=""/>
+											<ns:House code="5956b056-0d23-4f59-9c52-f561968bdda0">4</ns:House>
+											<ns:Building1>2</ns:Building1>
+											<ns:Building2/>
+											<ns:Apartment>23</ns:Apartment>
+										</ns:ActualAddress>
+									</ns:AddressInfo>
+									<ns:JobInfo>
+										<ns:Work>РЖД</ns:Work>
+										<ns:PositionWork>Сварщик</ns:PositionWork>
+									</ns:JobInfo>
+									<ns:IncomeInfo>
+										<ns:Income>
+											<ns:IncomeType code="3">Стипендия</ns:IncomeType>
+											<ns:IncomeDocName code="2">Справка о размере стипендий</ns:IncomeDocName>
+											<ns:IncomeDocSeries>7856</ns:IncomeDocSeries>
+											<ns:IncomeDocNumber>125469</ns:IncomeDocNumber>
+											<ns:IncomeDocIssueDate>2016-11-10</ns:IncomeDocIssueDate>
+											<ns:IncomeDocIssued>Бухгалтерия</ns:IncomeDocIssued>
+										</ns:Income>
+										<ns:IncomeSum>6000.00</ns:IncomeSum>
+									</ns:IncomeInfo>
+								</ns:PersonInfo>
+								<ns:RelativesInfo>
+									<ns:RelativeInfo>
+										<ns:Cognation code="2">Жена</ns:Cognation>
+										<ns:RelativeSurname>Иванова</ns:RelativeSurname>
+										<ns:RelativeName>Татьяна</ns:RelativeName>
+										<ns:RelativeMiddleName>Ивановна</ns:RelativeMiddleName>
+										<ns:RelativeBirthDate>1993-12-23</ns:RelativeBirthDate>
+										<ns:RelativeSNILS>000-121-232 44</ns:RelativeSNILS>
+										<ns:RelativePhone>+7(123)1234567</ns:RelativePhone>
+										<ns:Privileges>Получение пенсии по инвалидности</ns:Privileges>
+										<ns:RelativeIdentityDocInfo>
+											<ns:RelativeIdentityDocName code="1">Паспорт гражданина РФ</ns:RelativeIdentityDocName>
+											<ns:RelativeIdentityDocSeries>3006</ns:RelativeIdentityDocSeries>
+											<ns:RelativeIdentityDocNumber>112355</ns:RelativeIdentityDocNumber>
+											<ns:RelativeIdentityDocIssueDate>2007-11-23</ns:RelativeIdentityDocIssueDate>
+											<ns:RelativeIdentityDocIssued>Отделением УФМС России</ns:RelativeIdentityDocIssued>
+										</ns:RelativeIdentityDocInfo>
+										<ns:ConfirmCognationDocInfo>
+											<ns:ConfirmCognationDocName code="4">Свидетельство о заключении брака</ns:ConfirmCognationDocName>
+											<ns:ConfirmCognationDocSeries>1-ИК</ns:ConfirmCognationDocSeries>
+											<ns:ConfirmCognationDocNumber>789632</ns:ConfirmCognationDocNumber>
+											<ns:ConfirmCognationDocIssueDate>2015-05-05</ns:ConfirmCognationDocIssueDate>
+											<ns:ConfirmCognationDocIssued>Отделением ЗАГС г. Москвы</ns:ConfirmCognationDocIssued>
+										</ns:ConfirmCognationDocInfo>
+										<ns:AddressInfo>
+											<ns:RelativeAddress>
+												<ns:FullAddress>121351, Москва г., Бобруйская ул., 4 д., 2 корп.</ns:FullAddress>
+												<ns:Index>121351</ns:Index>
+												<ns:Region code="0c5b2444-70a0-4932-980c-b4dc0d3f02b5">г. Москва</ns:Region>
+												<ns:Area code=""/>
+												<ns:City code=""/>
+												<ns:CityArea code=""/>
+												<ns:Place code=""/>
+												<ns:Street code="585eec0b-314c-4309-a497-3fe09300e903">ул. Бобруйская</ns:Street>
+												<ns:AdditionalArea code=""/>
+												<ns:AdditionalStreet code=""/>
+												<ns:House code="5956b056-0d23-4f59-9c52-f561968bdda0">4</ns:House>
+												<ns:Building1>2</ns:Building1>
+												<ns:Building2/>
+												<ns:Apartment>23</ns:Apartment>
+											</ns:RelativeAddress>
+										</ns:AddressInfo>
+										<ns:JobInfo>
+											<ns:Work>Городская поликлиника №9</ns:Work>
+											<ns:PositionWork>Медсестра</ns:PositionWork>
+										</ns:JobInfo>
+										<ns:IncomeInfo>
+											<ns:Income>
+												<ns:IncomeType code="12">Иной вид дохода</ns:IncomeType>
+												<ns:OtherIncome>Сбор ягод и грибов</ns:OtherIncome>
+												<ns:IncomeDocName code="4">Справка, договор возмездного оказания услуг и выполнения подрядных работ</ns:IncomeDocName>
+												<ns:IncomeDocSeries>3214</ns:IncomeDocSeries>
+												<ns:IncomeDocNumber>745689</ns:IncomeDocNumber>
+												<ns:IncomeDocIssueDate>2016-11-11</ns:IncomeDocIssueDate>
+											</ns:Income>
+											<ns:IncomeSum>7000.00</ns:IncomeSum>
+										</ns:IncomeInfo>
+									</ns:RelativeInfo>
+								</ns:RelativesInfo>
+								<ns:ApplicationInfo>
+									<ns:ResultInfo>
+										<ns:Result code="1">На адрес электронной почты</ns:Result>
+									</ns:ResultInfo>
+									<ns:TransferInfo>
+										<ns:HomeSubsidy code="1">Совпадает с адресом регистрации правообладателя</ns:HomeSubsidy>
+										<ns:BankInfo>
+											<ns:DelegateINN>9856235415</ns:DelegateINN>
+											<ns:BankName>Сбербанк России</ns:BankName>                
+											<ns:BIK>589545394</ns:BIK>
+											<ns:BankAccount>12345678901234567890</ns:BankAccount>
+											<ns:CorrespondentAccount>96825896545216435481</ns:CorrespondentAccount>
+											<ns:CardNumber>0002456258527854</ns:CardNumber>
+										</ns:BankInfo>
+									</ns:TransferInfo>
+								</ns:ApplicationInfo>
+							</ns:FormData>
+						</ns1:MessagePrimaryContent>
+					</ns0:SenderProvidedRequestData>
+					<st3:MessageMetadata xmlns:st3="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1">
+						<st3:MessageId>{MessageID}</st3:MessageId>
+						<st3:MessageType>REQUEST</st3:MessageType>
+						<st3:Sender>
+							<st3:Mnemonic>FNS002</st3:Mnemonic>
+						</st3:Sender>
+						<st3:SendingTimestamp>{Timestamp}</st3:SendingTimestamp>
+						<st3:Recipient>
+							<st3:Mnemonic>123701_3T</st3:Mnemonic>
+						</st3:Recipient>
+						<st3:DeliveryTimestamp>{Timestamp}</st3:DeliveryTimestamp>
+						<st3:Status>messageIsDelivered</st3:Status>
+					</st3:MessageMetadata>
+					<ns2:FSAttachmentsList xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1"/>
+					<ReplyTo>eyJzaWQiOjMyNzkyLCJtaWQiOiI0ZDRhYzZjNC1jNzA1LTExZTgtYjU4MS0wMDE1NWQwMTBkMDAiLCJ0Y2QiOm51bGwsInJpZCI6bnVsbCwiZW9sIjoxNTM4NTY4NjIyLCJuaWQiOm51bGwsInNsYyI6bnVsbCwibW5tIjoiRk5TMDAyIn0=</ReplyTo>
+					<SenderInformationSystemSignature>
+						<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+							<ds:SignedInfo>
+								<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+								<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411"/>
+								<ds:Reference URI="#SIGNED_BY_CONSUMER">
+									<ds:Transforms>
+										<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+										<ds:Transform Algorithm="urn://smev-gov-ru/xmldsig/transform"/>
+									</ds:Transforms>
+									<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr3411"/>
+									<ds:DigestValue>xF7Y35FIYKO4/ZI6KbPJ/HfqpN+FuzAGXxx3kHFakG0=</ds:DigestValue>
+								</ds:Reference>
+							</ds:SignedInfo>
+							<ds:SignatureValue>FRsWoksqy1Mh1DePW1HOEoO3vW+wzZcWPBOp2HBM13CGz27kdfV34raEpl/+sEVJE4Z7/8CIfq6KJNUYtX27vA==</ds:SignatureValue>
+							<ds:KeyInfo>
+								<ds:X509Data>
+									<ds:X509Certificate>MIIIdjCCCCWgAwIBAgIQDqptnzag0oDnEWzs2PfURzAIBgYqhQMCAgMwggEhMSAwHgYJKoZIhvcNAQkBFhFtbnMxMDYyNUBuYWxvZy5ydTEYMBYGBSqFA2QBEg0xMDQ3NzA3MDMwNTEzMRowGAYIKoUDA4EDAQESDDAwNzcwNzMyOTE1MjELMAkGA1UEBhMCUlUxGTAXBgNVBAgMENCzLiDQnNC+0YHQutCy0LAxFTATBgNVBAcMDNCc0L7RgdC60LLQsDEpMCcGA1UECQwg0YPQuy4g0J3QtdCz0LvQuNC90L3QsNGPLCDQtC4gMjMxPzA9BgNVBAoMNtCk0LXQtNC10YDQsNC70YzQvdCw0Y8g0L3QsNC70L7Qs9C+0LLQsNGPINGB0LvRg9C20LHQsDEcMBoGA1UEAwwT0KTQndChINCg0L7RgdGB0LjQuDAeFw0xNzEyMjkwNzM1NTdaFw0xODEyMjkwNzQ1NTdaMIIBcDEWMBQGBSqFA2QDEgswMjYwNjQzODczNTEYMBYGBSqFA2QBEg0xMDQ3Nzk3MDgzODYxMRowGAYIKoUDA4EDAQESDDAwNzczMzUzNTczMDEjMCEGCSqGSIb3DQEJARYUbWljb2RAbTk5NjUubmFsb2cucnUxCzAJBgNVBAYTAlJVMRUwEwYDVQQIDAzQnNC+0YHQutCy0LAxFTATBgNVBAcMDNCc0L7RgdC60LLQsDFBMD8GA1UECQw40J/QvtGF0L7QtNC90YvQuSDQv9GA0L7QtdC30LQg0LTQvtC80L7QstC70LDQtNC10L3QuNC1IDMxLTArBgNVBAoMJNCc0Jgg0KTQndChINCg0L7RgdGB0LjQuCDQv9C+INCm0J7QlDEfMB0GA1UECwwW0KDRg9C60L7QstC+0LTRgdGC0LLQvjEtMCsGA1UEAwwk0JzQmCDQpNCd0KEg0KDQvtGB0YHQuNC4INC/0L4g0KbQntCUMGMwHAYGKoUDAgITMBIGByqFAwICJAAGByqFAwICHgEDQwAEQBs7k6bPg0SPN2IXheFLre20usxAoRkfCG8wvguD/JPOaaiEmUGMMek8Avi150CrcYVv9syHbQ/fkUIWSFoyQD2jggTiMIIE3jAOBgNVHQ8BAf8EBAMCBPAwHQYDVR0OBBYEFKelTr0X1gg4NaeI9kIQNSqUgKeJMDIGCSsGAQQBgjcVBwQlMCMGGyqFAwICMgEJh8OkLY6IOYTJnm+1gS+DiSL2YwIBAQIBADCCAWMGA1UdIwSCAVowggFWgBQWPUKQvwqciBdmuSZPkoRwo9cF26GCASmkggElMIIBITEaMBgGCCqFAwOBAwEBEgwwMDc3MTA0NzQzNzUxGDAWBgUqhQNkARINMTA0NzcwMjAyNjcwMTEeMBwGCSqGSIb3DQEJARYPZGl0QG1pbnN2eWF6LnJ1MTwwOgYDVQQJDDMxMjUzNzUg0LMuINCc0L7RgdC60LLQsCDRg9C7LiDQotCy0LXRgNGB0LrQsNGPINC0LjcxLDAqBgNVBAoMI9Cc0LjQvdC60L7QvNGB0LLRj9C30Ywg0KDQvtGB0YHQuNC4MRUwEwYDVQQHDAzQnNC+0YHQutCy0LAxHDAaBgNVBAgMEzc3INCzLiDQnNC+0YHQutCy0LAxCzAJBgNVBAYTAlJVMRswGQYDVQQDDBLQo9CmIDEg0JjQoSDQk9Cj0KaCEQSoHkAFqRhcguYRx+1NI2UxMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDAdBgNVHSAEFjAUMAgGBiqFA2RxATAIBgYqhQNkcQIwKwYDVR0QBCQwIoAPMjAxNzEyMjkwNzM1NTZagQ8yMDE4MTIyOTA3MzU1NlowggE3BgUqhQNkcASCASwwggEoDCjQn9CQ0JrQnCAi0JrRgNC40L/RgtC+0J/RgNC+IEhTTSIgdi4gMS4wDFrQn9CQ0JogItCj0LTQvtGB0YLQvtCy0LXRgNGP0Y7RidC40Lkg0YbQtdC90YLRgCAi0JrRgNC40L/RgtC+0J/RgNC+INCj0KYiINCy0LXRgNGB0LjQuCAyLjAMT9Ch0LXRgNGC0LjRhNC40LrQsNGCINGB0L7QvtGC0LLQtdGC0YHRgtCy0LjRjyDihJYg0KHQpC8xMjEtMjQxNCDQvtGCIDE3LjA2LjIwMTQMT9Ch0LXRgNGC0LjRhNC40LrQsNGCINGB0L7QvtGC0LLQtdGC0YHRgtCy0LjRjyDihJYg0KHQpC8xMjgtMjg4MSDQvtGCIDEyLjA0LjIwMTYwPwYFKoUDZG8ENgw00KHQmtCX0JggItCa0YDQuNC/0YLQvtCf0YDQviBDU1AiICjQstC10YDRgdC40Y8gNC4wKTCBogYDVR0fBIGaMIGXMEqgSKBGhkRodHRwOi8vYzAwMDAtYXBwMDA1L2NkcC8xNjNkNDI5MGJmMGE5Yzg4MTc2NmI5MjY0ZjkyODQ3MGEzZDcwNWRiLmNybDBJoEegRYZDaHR0cDovL3VjLm5hbG9nLnJ1L2NkcC8xNjNkNDI5MGJmMGE5Yzg4MTc2NmI5MjY0ZjkyODQ3MGEzZDcwNWRiLmNybDCBhQYIKwYBBQUHAQEEeTB3MDoGCCsGAQUFBzAChi5odHRwOi8vYzAwMDAtYXBwMDA1L2NydC9jYV9mbnNfcnVzc2lhXzIwMTcuY3J0MDkGCCsGAQUFBzAChi1odHRwOi8vdWMubmFsb2cucnUvY3J0L2NhX2Zuc19ydXNzaWFfMjAxNy5jcnQwCAYGKoUDAgIDA0EANsKmvfLlkkNStUQjJvBelG0nr9L/vHZrD6QbS4wR8F2/eeOqcyF62lQGy7VpnYyh+5edl8HG7O2c7Q8uzC64eA==</ds:X509Certificate>
+								</ds:X509Data>
+							</ds:KeyInfo>
+						</ds:Signature>
+					</SenderInformationSystemSignature>
+				</Request>
+				<ns2:AttachmentContentList xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1"/>
+				<SMEVSignature>
+					<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+						<ds:SignedInfo>
+							<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+							<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411"/>
+							<ds:Reference URI="#SIGNED_BY_SMEV">
+								<ds:Transforms>
+									<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+									<ds:Transform Algorithm="urn://smev-gov-ru/xmldsig/transform"/>
+								</ds:Transforms>
+								<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr3411"/>
+								<ds:DigestValue>1zWAHEcNO7S0SMC0G5WB3csDpn4kn1ohXxtyKIgCWG4=</ds:DigestValue>
+							</ds:Reference>
+						</ds:SignedInfo>
+						<ds:SignatureValue>P53NUQIpTPk5wfiubtL7VphRVjGNIT69aDU1APo3g+w8UXUSIqG7A58sU2lg7vCeswFhCE5qmY22Gkxkv1ccMQ==</ds:SignatureValue>
+						<ds:KeyInfo>
+							<ds:X509Data>
+								<ds:X509Certificate>MIIH2DCCB4egAwIBAgIRAXILAVZQAHCj6BHaIfbqMnEwCAYGKoUDAgIDMIIBRjEYMBYGBSqFA2QBEg0xMjM0NTY3ODkwMTIzMRowGAYIKoUDA4EDAQESDDAwMTIzNDU2Nzg5MDEpMCcGA1UECQwg0KHRg9GJ0LXQstGB0LrQuNC5INCy0LDQuyDQtC4gMjYxFzAVBgkqhkiG9w0BCQEWCGNhQHJ0LnJ1MQswCQYDVQQGEwJSVTEYMBYGA1UECAwPNzcg0JzQvtGB0LrQstCwMRUwEwYDVQQHDAzQnNC+0YHQutCy0LAxJDAiBgNVBAoMG9Ce0JDQniDQoNC+0YHRgtC10LvQtdC60L7QvDEwMC4GA1UECwwn0KPQtNC+0YHRgtC+0LLQtdGA0Y/RjtGJ0LjQuSDRhtC10L3RgtGAMTQwMgYDVQQDDCvQotC10YHRgtC+0LLRi9C5INCj0KYg0KDQotCaICjQoNCi0JvQsNCx0YEpMB4XDTE4MDMwNzA3Mjc1M1oXDTE5MDMwNzA3Mzc1M1owggELMR8wHQYJKoZIhvcNAQkCDBDQotCh0JzQrdCSM1/QmtCaMRowGAYIKoUDA4EDAQESDDAwNzcwNzA0OTM4ODEYMBYGBSqFA2QBEg0xMDI3NzAwMTk4NzY3MSgwJgYDVQQKDB/Qn9CQ0J4gwqvQoNC+0YHRgtC10LvQtdC60L7QvMK7MSYwJAYDVQQHDB3QodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQszEpMCcGA1UECAwgNzgg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMxCzAJBgNVBAYTAlJVMSgwJgYDVQQDDB/Qn9CQ0J4gwqvQoNC+0YHRgtC10LvQtdC60L7QvMK7MGMwHAYGKoUDAgITMBIGByqFAwICJAAGByqFAwICHgEDQwAEQMC71XesoJAavwGJgMlhlPywcaFx3HYPwMUIYBhtoglDW3BhQUzgIXFQ6uvD7FUshBl38VH+AXZM/BkzGGzpzFSjggSDMIIEfzAOBgNVHQ8BAf8EBAMCBPAwHQYDVR0OBBYEFItxgSnIqbor48DVSfsV11JpIwXDMIIBiAYDVR0jBIIBfzCCAXuAFD7vGT8PuXmw8eYpIaPkuZW5pe6QoYIBTqSCAUowggFGMRgwFgYFKoUDZAESDTEyMzQ1Njc4OTAxMjMxGjAYBggqhQMDgQMBARIMMDAxMjM0NTY3ODkwMSkwJwYDVQQJDCDQodGD0YnQtdCy0YHQutC40Lkg0LLQsNC7INC0LiAyNjEXMBUGCSqGSIb3DQEJARYIY2FAcnQucnUxCzAJBgNVBAYTAlJVMRgwFgYDVQQIDA83NyDQnNC+0YHQutCy0LAxFTATBgNVBAcMDNCc0L7RgdC60LLQsDEkMCIGA1UECgwb0J7QkNCeINCg0L7RgdGC0LXQu9C10LrQvtC8MTAwLgYDVQQLDCfQo9C00L7RgdGC0L7QstC10YDRj9GO0YnQuNC5INGG0LXQvdGC0YAxNDAyBgNVBAMMK9Ci0LXRgdGC0L7QstGL0Lkg0KPQpiDQoNCi0JogKNCg0KLQm9Cw0LHRgSmCEQFyCwFWUAC5s+cRzzq+NHegMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDAnBgkrBgEEAYI3FQoEGjAYMAoGCCsGAQUFBwMCMAoGCCsGAQUFBwMEMB0GA1UdIAQWMBQwCAYGKoUDZHEBMAgGBiqFA2RxAjArBgNVHRAEJDAigA8yMDE4MDMwNzA3Mjc1M1qBDzIwMTkwMzA3MDcyNzUzWjCCATQGBSqFA2RwBIIBKTCCASUMKyLQmtGA0LjQv9GC0L7Qn9GA0L4gQ1NQIiAo0LLQtdGA0YHQuNGPIDMuOSkMLCLQmtGA0LjQv9GC0L7Qn9GA0L4g0KPQpiIgKNCy0LXRgNGB0LjQuCAyLjApDGPQodC10YDRgtC40YTQuNC60LDRgiDRgdC+0L7RgtCy0LXRgtGB0YLQstC40Y8g0KTQodCRINCg0L7RgdGB0LjQuCDihJYg0KHQpC8xMjQtMjUzOSDQvtGCIDE1LjAxLjIwMTUMY9Ch0LXRgNGC0LjRhNC40LrQsNGCINGB0L7QvtGC0LLQtdGC0YHRgtCy0LjRjyDQpNCh0JEg0KDQvtGB0YHQuNC4IOKEliDQodCkLzEyOC0yODgxINC+0YIgMTIuMDQuMjAxNjA2BgUqhQNkbwQtDCsi0JrRgNC40L/RgtC+0J/RgNC+IENTUCIgKNCy0LXRgNGB0LjRjyAzLjkpMGUGA1UdHwReMFwwWqBYoFaGVGh0dHA6Ly9jZXJ0ZW5yb2xsLnRlc3QuZ29zdXNsdWdpLnJ1L2NkcC8zZWVmMTkzZjBmYjk3OWIwZjFlNjI5MjFhM2U0Yjk5NWI5YTVlZTkwLmNybDBXBggrBgEFBQcBAQRLMEkwRwYIKwYBBQUHMAKGO2h0dHA6Ly9jZXJ0ZW5yb2xsLnRlc3QuZ29zdXNsdWdpLnJ1L2NkcC90ZXN0X2NhX3J0bGFiczIuY2VyMAgGBiqFAwICAwNBAAfuLimwLO1RNL+ekh4hgnPu+yyLSiF2xGN4yZqWeA4d5VKU2zxveBMmSb4nvJFZ/3Qod1aQDdlgTRObLhKnEO8=</ds:X509Certificate>
+							</ds:X509Data>
+						</ds:KeyInfo>
+					</ds:Signature>
+				</SMEVSignature>
+			</RequestMessage>
+		</GetRequestResponse>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+

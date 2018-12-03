@@ -52,7 +52,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
                 sa = '"urn:Ack"'
             elif xml_tree.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
                                '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendResponseRequest'):
-                sa = '"urn:SendResponseRequest"'
+                sa = '"urn:SendResponse"'
             elif xml_tree.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
                                '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}GetResponseRequest'):
                 sa = '"urn:GetResponse"'
@@ -74,7 +74,10 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
             print('Принял GetResponse - получение ответа на наш запрос')
             message = getResponse.get_response()
         elif sa == '"urn:SendResponseRequest"':
-            print('Принял SendResponse - отправка ответа')
+            print('Принял SendResponseRequest - отправка ответа')
+            message = sendResponse.send_response(post_body)
+        elif sa == '"urn:SendResponse"':
+            print('Принял SendResponseRequest - отправка ответа')
             message = sendResponse.send_response(post_body)
 
         # Send headers

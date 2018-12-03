@@ -1,9 +1,17 @@
 import smev3
-
+from termcolor import colored
+import sendRequest
+import xml.etree.ElementTree as etree
 
 def send_response(text):
     """Всегда подтверждает ответ"""
     message_id = smev3.get_message_id(text)
+    if len(message_id) < 1:
+        xml_tree = etree.fromstring(text)
+        message_id = xml_tree.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
+                  '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendResponseRequest/'
+                '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedResponseData/'
+                  '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}MessageID').text
     t = smev3.time_stamp()
     xml = """
     <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
@@ -54,4 +62,5 @@ def send_response(text):
 	</soap:Body>
 </soap:Envelope>
     """ % (message_id, t)
+
     return xml

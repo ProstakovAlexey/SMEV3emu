@@ -263,6 +263,16 @@ def send_request(text):
         print(colored('Сведения о налич. (отсут) задолж-ти по уплате налогов', 'blue'))
         response = get_file(os.path.join('Шаблоны', 'Ответы',
                                          'Сведения о налич. (отсут) задолж-ти по уплате налогов'))
+    # Ответ на заявление по детским
+    elif text.find('{http://schemas.xmlsoap.org/soap/envelope/}Body/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SendRequestRequest/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedRequestData/'
+                       '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1}MessagePrimaryContent/'
+                       '{http://epgu.gosuslugi.ru/hub/familyallowance/3.1.2}FormDataResponse'):
+        print(colored('Ответ на заявление по малоимущим', 'blue'))
+        response = get_file(os.path.join('Шаблоны', 'Ответы',
+                                         'Ответ на заявление КУ по детям'))
+
     # Неизвестный запрос, ответ на него не даем
     else:
         print(colored('Запрос с неизветсным URI', 'red'))

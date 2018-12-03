@@ -33,7 +33,10 @@ def get_request():
         except PermissionError:
             print('Не смог удалить файл', requests_list[0])
         # Нужно заполнить в сообщении UUI и дату
-        attr = {'MessageID': str(uuid.uuid1()), 'TransactionCode': str(uuid.uuid1()), 'Timestamp': smev3.time_stamp()}
+        attr = {'MessageID': str(uuid.uuid1()),
+                'TransactionCode': str(uuid.uuid1()),
+                'Timestamp': smev3.time_stamp(),
+                'orderId': smev3.case_num()}
         message = message.format(** attr)
     return message
 
