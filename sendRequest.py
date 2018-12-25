@@ -269,7 +269,7 @@ def send_request(text):
                        '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1}SenderProvidedRequestData/'
                        '{urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1}MessagePrimaryContent/'
                        '{http://epgu.gosuslugi.ru/hub/familyallowance/3.1.2}FormDataResponse'):
-        print(colored('Ответ на заявление по малоимущим', 'blue'))
+        print(colored('Ответ на заявление по детским', 'blue'))
         response = get_file(os.path.join('Шаблоны', 'Ответы',
                                          'Ответ на заявление КУ по детям'))
 

@@ -10,142 +10,74 @@
 						<ns0:ReferenceMessageID>{MessageID}</ns0:ReferenceMessageID>
 						<ns0:TransactionCode>ignore</ns0:TransactionCode>
 						<ns1:MessagePrimaryContent xmlns:ns1="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
-							<ns:FormData oktmo="{oktmo}" xmlns:ns="http://epgu.gosuslugi.ru/hub/familyallowance/3.1.2">
-								<ns:orderId>{orderId}</ns:orderId>
-								<ns:ServicesType>-1000382223</ns:ServicesType>
-								<ns:Subservice code="{SubserviceCode}">{SubserviceName}</ns:Subservice>
-								<ns:Organization code="{OrganizationCode}">{OrganizationName}</ns:Organization>
-								<ns:bookId>{bookId}</ns:bookId>
-								<ns:BenefitsInfo>
-									<ns:BenefitInfo>
-										<ns:BenefitCategory code="1">Ветеран труда</ns:BenefitCategory>
-										<ns:BenefitDocName code="15">Удостоверение</ns:BenefitDocName>
-										<ns:BenefitDocSeries>12</ns:BenefitDocSeries>
-										<ns:BenefitDocNumber>123456</ns:BenefitDocNumber>
-										<ns:BenefitDocIssueDate>2015-01-01</ns:BenefitDocIssueDate>
-										<ns:BenefitDocIssued>Фонд социальной защиты населения</ns:BenefitDocIssued>
-									</ns:BenefitInfo>
-								</ns:BenefitsInfo>
-								<ns:DelegateInfo>
-									<ns:DelegateCategory code="1">Родитель</ns:DelegateCategory>
-									<ns:DelegateSurname>Иванов</ns:DelegateSurname>
-									<ns:DelegateName>Иван</ns:DelegateName>
-									<ns:DelegateMiddleName>Иванович</ns:DelegateMiddleName>
-									<ns:DelegateBirthDate>1970-09-10</ns:DelegateBirthDate>
-									<ns:DelegateSex>Male</ns:DelegateSex>
-									<ns:DelegateSNILS>000-102-103 55</ns:DelegateSNILS>
-									<ns:DelegatePhone>+7(999)9999999</ns:DelegatePhone>
-									<ns:DelegateEmail>test@test.ru</ns:DelegateEmail>
-									<ns:DelegateIdentityDocInfo>
-										<ns:DelegateIdentityDocName code="1">Паспорт гражданина РФ</ns:DelegateIdentityDocName>
-										<ns:DelegateIdentityDocSeries>6003</ns:DelegateIdentityDocSeries>
-										<ns:DelegateIdentityDocNumber>586839</ns:DelegateIdentityDocNumber>
-										<ns:DelegateIdentityDocIssueDate>2007-09-10</ns:DelegateIdentityDocIssueDate>
-										<ns:DelegateIdentityDocIssueCode>000009</ns:DelegateIdentityDocIssueCode>
-										<ns:DelegateIdentityDocIssued>Отделением УФМС России</ns:DelegateIdentityDocIssued>
-									</ns:DelegateIdentityDocInfo>
-									<ns:DelegateCredentialsDocInfo>
-										<ns:DelegateCredentialsDocName code="1">Свидетельство о рождении</ns:DelegateCredentialsDocName>
-										<ns:DelegateCredentialsDocSeries>1-ИК</ns:DelegateCredentialsDocSeries>
-										<ns:DelegateCredentialsDocNumber>600300</ns:DelegateCredentialsDocNumber>
-										<ns:DelegateCredentialsDocDate>1993-10-20</ns:DelegateCredentialsDocDate>
-										<ns:DelegateCredentialsDocIssued>Отделение ЗАГС г. Москвы</ns:DelegateCredentialsDocIssued>
-									</ns:DelegateCredentialsDocInfo>
-									<ns:JobInfo>
-										<ns:Work>ЖЭК</ns:Work>
-										<ns:PositionWork>Дворник</ns:PositionWork>
-									</ns:JobInfo>
-									<ns:IncomeInfo>
-										<ns:Income>
-											<ns:IncomeType code="1">Заработная плата</ns:IncomeType>
-											<ns:IncomeDocName code="1">Справка с основного места работы и со всех мест дополнительной работы о доходах</ns:IncomeDocName>
-											<ns:IncomeDocSeries/>
-											<ns:IncomeDocNumber>15</ns:IncomeDocNumber>
-											<ns:IncomeDocIssueDate>2016-11-10</ns:IncomeDocIssueDate>
-											<ns:IncomeDocIssued>Бухгалтерия</ns:IncomeDocIssued>
-										</ns:Income>
-										<ns:IncomeSum>4000.00</ns:IncomeSum>
-									</ns:IncomeInfo>
-								</ns:DelegateInfo>
-								<ns:PersonInfo>
-									<ns:PersonSurname>Иванов</ns:PersonSurname>
-									<ns:PersonName>Николай</ns:PersonName>
-									<ns:PersonMiddleName>Иванович</ns:PersonMiddleName>
-									<ns:PersonBirthDate>1993-10-20</ns:PersonBirthDate>
-									<ns:PersonSex>Male</ns:PersonSex>
-									<ns:PersonSNILS>000-102-103 44</ns:PersonSNILS>
-									<ns:PersonPhone>+7(123)1234567</ns:PersonPhone>
-									<ns:PersonEmail>test@test.ru</ns:PersonEmail>
-									<ns:PersonIdentityDocInfo>
-										<ns:PersonIdentityDocName code="1">Паспорт гражданина РФ</ns:PersonIdentityDocName>
-										<ns:PersonIdentityDocSeries>6004</ns:PersonIdentityDocSeries>
-										<ns:PersonIdentityDocNumber>586830</ns:PersonIdentityDocNumber>
-										<ns:PersonIdentityDocIssueDate>2007-09-10</ns:PersonIdentityDocIssueDate>
-										<ns:PersonIdentityDocIssueCode>000009</ns:PersonIdentityDocIssueCode>
-										<ns:PersonIdentityDocIssued>Отделением УФМС России</ns:PersonIdentityDocIssued>
-										<ns:Citizenship>Российская Федерация</ns:Citizenship>
-										<ns:BirthCountry>Российская Федерация</ns:BirthCountry>
-										<ns:BirthPlace>г. Москва</ns:BirthPlace>
-									</ns:PersonIdentityDocInfo>
-									<ns:AddressInfo>
-										<ns:RegistrationAddress>
-											<ns:FullAddress>121351, Москва г., Бобруйская ул., 4 д., 2 корп.</ns:FullAddress>
-											<ns:Index>121351</ns:Index>
-											<ns:Region code="0c5b2444-70a0-4932-980c-b4dc0d3f02b5">г. Москва</ns:Region>
-											<ns:Area code=""/>
-											<ns:City code=""/>
-											<ns:CityArea code=""/>
-											<ns:Place code=""/>
-											<ns:Street code="585eec0b-314c-4309-a497-3fe09300e903">ул. Бобруйская</ns:Street>
-											<ns:AdditionalArea code=""/>
-											<ns:AdditionalStreet code=""/>
-											<ns:House code="5956b056-0d23-4f59-9c52-f561968bdda0">4</ns:House>
-											<ns:Building1>2</ns:Building1>
-											<ns:Building2/>
-											<ns:Apartment>23</ns:Apartment>
-										</ns:RegistrationAddress>
-										<ns:ActualAddress>
-											<ns:FullAddress>121351, Москва г., Бобруйская ул., 4 д., 2 корп.</ns:FullAddress>
-											<ns:Index>121351</ns:Index>
-											<ns:Region code="0c5b2444-70a0-4932-980c-b4dc0d3f02b5">г. Москва</ns:Region>
-											<ns:Area code=""/>
-											<ns:City code=""/>
-											<ns:CityArea code=""/>
-											<ns:Place code=""/>
-											<ns:Street code="585eec0b-314c-4309-a497-3fe09300e903">ул. Бобруйская</ns:Street>
-											<ns:AdditionalArea code=""/>
-											<ns:AdditionalStreet code=""/>
-											<ns:House code="5956b056-0d23-4f59-9c52-f561968bdda0">4</ns:House>
-											<ns:Building1>2</ns:Building1>
-											<ns:Building2/>
-											<ns:Apartment>23</ns:Apartment>
-										</ns:ActualAddress>
-									</ns:AddressInfo>
-									<ns:JobInfo>
-										<ns:Work>РЖД</ns:Work>
-										<ns:PositionWork>Сварщик</ns:PositionWork>
-									</ns:JobInfo>
-									<ns:IncomeInfo>
-										<ns:Income>
-											<ns:IncomeType code="3">Стипендия</ns:IncomeType>
-											<ns:IncomeDocName code="2">Справка о размере стипендий</ns:IncomeDocName>
-											<ns:IncomeDocSeries>7856</ns:IncomeDocSeries>
-											<ns:IncomeDocNumber>125469</ns:IncomeDocNumber>
-											<ns:IncomeDocIssueDate>2016-11-10</ns:IncomeDocIssueDate>
-											<ns:IncomeDocIssued>Бухгалтерия</ns:IncomeDocIssued>
-										</ns:Income>
-										<ns:IncomeSum>6000.00</ns:IncomeSum>
-									</ns:IncomeInfo>
-								</ns:PersonInfo>
-								<ns:ChildrenInfo>
-									<ns:ChildInfo>
-										<ns:ChildSurname>Иванова</ns:ChildSurname>
-										<ns:ChildName>Мария</ns:ChildName>
-										<ns:ChildMiddleName>Николаевна</ns:ChildMiddleName>
-										<ns:ChildSex>Female</ns:ChildSex>
-										<ns:ChildBirthDate>2016-10-10</ns:ChildBirthDate>
+								<ns:FormData oktmo="{oktmo}" xmlns:ns="http://epgu.gosuslugi.ru/hub/allowance/3.1.2">
+									<ns:orderId>{orderId}</ns:orderId>
+									<ns:ServicesType>-1000382221</ns:ServicesType>
+									<ns:Subservice code="{SubserviceCode}">{SubserviceName}</ns:Subservice>
+									<ns:Organization code="{OrganizationCode}">{OrganizationName}</ns:Organization>
+									<ns:bookId>{bookId}</ns:bookId>
+									<ns:BenefitsInfo>
+										<ns:BenefitInfo>
+											<ns:BenefitCategory code="{CategoryCode}">{CategoryName}</ns:BenefitCategory>
+											<ns:BenefitDocName code="15">Удостоверение</ns:BenefitDocName>
+											<ns:BenefitDocSeries>12</ns:BenefitDocSeries>
+											<ns:BenefitDocNumber>123456</ns:BenefitDocNumber>
+											<ns:BenefitDocIssueDate>2015-01-01</ns:BenefitDocIssueDate>
+											<ns:BenefitDocIssued>Фонд социальной защиты населения</ns:BenefitDocIssued>
+										</ns:BenefitInfo>
+									</ns:BenefitsInfo>
+									<ns:DelegateInfo>
+										<ns:DelegateCategory code="1">Родитель</ns:DelegateCategory>
+										<ns:DelegateSurname>Иванов</ns:DelegateSurname>
+										<ns:DelegateName>Иван</ns:DelegateName>
+										<ns:DelegateMiddleName>Иванович</ns:DelegateMiddleName>
+										<ns:DelegateBirthDate>1970-09-10</ns:DelegateBirthDate>
+										<ns:DelegateSex>Male</ns:DelegateSex>
+										<ns:DelegateSNILS>000-102-103 55</ns:DelegateSNILS>
+										<ns:DelegatePhone>+7(999)9999999</ns:DelegatePhone>
+										<ns:DelegateEmail>test@test.ru</ns:DelegateEmail>
+										<ns:DelegateIdentityDocInfo>
+											<ns:DelegateIdentityDocName code="1">Паспорт гражданина РФ</ns:DelegateIdentityDocName>
+											<ns:DelegateIdentityDocSeries>6003</ns:DelegateIdentityDocSeries>
+											<ns:DelegateIdentityDocNumber>586839</ns:DelegateIdentityDocNumber>
+											<ns:DelegateIdentityDocIssueDate>2007-09-10</ns:DelegateIdentityDocIssueDate>
+											<ns:DelegateIdentityDocIssueCode>000009</ns:DelegateIdentityDocIssueCode>
+											<ns:DelegateIdentityDocIssued>Отделением УФМС России</ns:DelegateIdentityDocIssued>
+										</ns:DelegateIdentityDocInfo>
+										<ns:DelegateCredentialsDocInfo>
+											<ns:DelegateCredentialsDocName code="1">Свидетельство о рождении</ns:DelegateCredentialsDocName>
+											<ns:DelegateCredentialsDocSeries>1-ИК</ns:DelegateCredentialsDocSeries>
+											<ns:DelegateCredentialsDocNumber>600300</ns:DelegateCredentialsDocNumber>
+											<ns:DelegateCredentialsDocDate>1993-10-20</ns:DelegateCredentialsDocDate>
+											<ns:DelegateCredentialsDocIssued>Отделение ЗАГС г. Москвы</ns:DelegateCredentialsDocIssued>
+										</ns:DelegateCredentialsDocInfo>
+										<ns:JobInfo>
+											<ns:Work>Магазин № 10</ns:Work>
+											<ns:PositionWork>Продавец</ns:PositionWork>
+										</ns:JobInfo>
+									</ns:DelegateInfo>
+									<ns:PersonInfo>
+										<ns:PersonSurname>Иванов</ns:PersonSurname>
+										<ns:PersonName>Николай</ns:PersonName>
+										<ns:PersonMiddleName>Иванович</ns:PersonMiddleName>
+										<ns:PersonBirthDate>1993-10-20</ns:PersonBirthDate>
+										<ns:PersonSex>Male</ns:PersonSex>
+										<ns:PersonSNILS>000-102-103 44</ns:PersonSNILS>
+										<ns:PersonPhone>+7(123)1234567</ns:PersonPhone>
+										<ns:PersonEmail>test@test.ru</ns:PersonEmail>
+										<ns:PersonIdentityDocInfo>
+											<ns:PersonIdentityDocName code="1">Паспорт гражданина РФ</ns:PersonIdentityDocName>
+											<ns:PersonIdentityDocSeries>6004</ns:PersonIdentityDocSeries>
+											<ns:PersonIdentityDocNumber>586830</ns:PersonIdentityDocNumber>
+											<ns:PersonIdentityDocIssueDate>2007-09-10</ns:PersonIdentityDocIssueDate>
+											<ns:PersonIdentityDocIssueCode>000009</ns:PersonIdentityDocIssueCode>
+											<ns:PersonIdentityDocIssued>Отделением УФМС России</ns:PersonIdentityDocIssued>
+											<ns:Citizenship>Российская Федерация</ns:Citizenship>
+											<ns:BirthCountry>Российская Федерация</ns:BirthCountry>
+											<ns:BirthPlace>г. Москва</ns:BirthPlace>
+										</ns:PersonIdentityDocInfo>
 										<ns:AddressInfo>
-											<ns:ChildAddress>
+											<ns:RegistrationAddress>
 												<ns:FullAddress>121351, Москва г., Бобруйская ул., 4 д., 2 корп.</ns:FullAddress>
 												<ns:Index>121351</ns:Index>
 												<ns:Region code="0c5b2444-70a0-4932-980c-b4dc0d3f02b5">г. Москва</ns:Region>
@@ -160,42 +92,8 @@
 												<ns:Building1>2</ns:Building1>
 												<ns:Building2/>
 												<ns:Apartment>23</ns:Apartment>
-											</ns:ChildAddress>
-										</ns:AddressInfo>
-										<ns:ChildIdentityDocInfo>
-											<ns:ChildIdentityDocName code="2">Свидетельство о рождении</ns:ChildIdentityDocName>
-											<ns:ChildIdentityDocSeries>1-ТК</ns:ChildIdentityDocSeries>
-											<ns:ChildIdentityDocNumber>652458</ns:ChildIdentityDocNumber>
-											<ns:ChildIdentityDocIssueDate>2016-10-15</ns:ChildIdentityDocIssueDate>
-											<ns:ChildIdentityDocIssued>Отделением ЗАГС г. Москвы</ns:ChildIdentityDocIssued>
-										</ns:ChildIdentityDocInfo>
-									</ns:ChildInfo>
-								</ns:ChildrenInfo>
-								<ns:RelativesInfo>
-									<ns:RelativeInfo>
-										<ns:Cognation code="2">Жена</ns:Cognation>
-										<ns:RelativeSurname>Иванова</ns:RelativeSurname>
-										<ns:RelativeName>Татьяна</ns:RelativeName>
-										<ns:RelativeMiddleName>Ивановна</ns:RelativeMiddleName>
-										<ns:RelativeBirthDate>1993-12-23</ns:RelativeBirthDate>
-										<ns:RelativeSNILS>000-121-232 44</ns:RelativeSNILS>
-										<ns:RelativePhone>+7(123)1234567</ns:RelativePhone>
-										<ns:RelativeIdentityDocInfo>
-											<ns:RelativeIdentityDocName code="1">Паспорт гражданина РФ</ns:RelativeIdentityDocName>
-											<ns:RelativeIdentityDocSeries>3006</ns:RelativeIdentityDocSeries>
-											<ns:RelativeIdentityDocNumber>112355</ns:RelativeIdentityDocNumber>
-											<ns:RelativeIdentityDocIssueDate>2007-11-23</ns:RelativeIdentityDocIssueDate>
-											<ns:RelativeIdentityDocIssued>Отделением УФМС России</ns:RelativeIdentityDocIssued>
-										</ns:RelativeIdentityDocInfo>
-										<ns:ConfirmCognationDocInfo>
-											<ns:ConfirmCognationDocName code="4">Свидетельство о заключении брака</ns:ConfirmCognationDocName>
-											<ns:ConfirmCognationDocSeries>1-ИК</ns:ConfirmCognationDocSeries>
-											<ns:ConfirmCognationDocNumber>789632</ns:ConfirmCognationDocNumber>
-											<ns:ConfirmCognationDocIssueDate>2015-05-05</ns:ConfirmCognationDocIssueDate>
-											<ns:ConfirmCognationDocIssued>Отделением ЗАГС г. Москвы</ns:ConfirmCognationDocIssued>
-										</ns:ConfirmCognationDocInfo>
-										<ns:AddressInfo>
-											<ns:RelativeAddress>
+											</ns:RegistrationAddress>
+											<ns:ActualAddress>
 												<ns:FullAddress>121351, Москва г., Бобруйская ул., 4 д., 2 корп.</ns:FullAddress>
 												<ns:Index>121351</ns:Index>
 												<ns:Region code="0c5b2444-70a0-4932-980c-b4dc0d3f02b5">г. Москва</ns:Region>
@@ -210,41 +108,76 @@
 												<ns:Building1>2</ns:Building1>
 												<ns:Building2/>
 												<ns:Apartment>23</ns:Apartment>
-											</ns:RelativeAddress>
+											</ns:ActualAddress>
 										</ns:AddressInfo>
 										<ns:JobInfo>
-											<ns:Work>Городская поликлиника №9</ns:Work>
-											<ns:PositionWork>Медсестра</ns:PositionWork>
+											<ns:Work>РЖД</ns:Work>
+											<ns:PositionWork>Сварщик</ns:PositionWork>
 										</ns:JobInfo>
-										<ns:IncomeInfo>
-											<ns:Income>
-												<ns:IncomeType code="12">Иной вид дохода</ns:IncomeType>
-												<ns:OtherIncome>Сбор ягод и грибов</ns:OtherIncome>
-												<ns:IncomeDocName code="4">Справка, договор возмездного оказания услуг и выполнения подрядных работ</ns:IncomeDocName>
-												<ns:IncomeDocSeries>3214</ns:IncomeDocSeries>
-												<ns:IncomeDocNumber>745689</ns:IncomeDocNumber>
-												<ns:IncomeDocIssueDate>2016-11-11</ns:IncomeDocIssueDate>
-											</ns:Income>
-											<ns:IncomeSum>7000.00</ns:IncomeSum>
-										</ns:IncomeInfo>
-									</ns:RelativeInfo>
-								</ns:RelativesInfo>
-								<ns:ApplicationInfo>
-									<ns:ResultInfo>
-										<ns:Result code="1">На адрес электронной почты</ns:Result>
-									</ns:ResultInfo>
-									<ns:TransferInfo>
-										<ns:BankInfo>
-											<ns:DelegateINN>9856235415</ns:DelegateINN>
-											<ns:BankName>Сбербанк России</ns:BankName>
-											<ns:BIK>589545394</ns:BIK>
-											<ns:BankAccount>12345678901234567890</ns:BankAccount>
-											<ns:CorrespondentAccount>96825896545216435481</ns:CorrespondentAccount>
-											<ns:CardNumber>0002456258527854</ns:CardNumber>
-										</ns:BankInfo>
-									</ns:TransferInfo>
-								</ns:ApplicationInfo>
-							</ns:FormData>
+									</ns:PersonInfo>
+									<ns:RelativesInfo>
+										<ns:RelativeInfo>
+											<ns:Cognation code="2">Жена</ns:Cognation>
+											<ns:RelativeSurname>Иванова</ns:RelativeSurname>
+											<ns:RelativeName>Татьяна</ns:RelativeName>
+											<ns:RelativeMiddleName>Ивановна</ns:RelativeMiddleName>
+											<ns:RelativeBirthDate>1993-12-23</ns:RelativeBirthDate>
+											<ns:RelativeSNILS>000-121-232 44</ns:RelativeSNILS>
+											<ns:RelativePhone>+7(123)1234567</ns:RelativePhone>
+											<ns:RelativeIdentityDocInfo>
+												<ns:RelativeIdentityDocName code="1">Паспорт гражданина РФ</ns:RelativeIdentityDocName>
+												<ns:RelativeIdentityDocSeries>3006</ns:RelativeIdentityDocSeries>
+												<ns:RelativeIdentityDocNumber>112355</ns:RelativeIdentityDocNumber>
+												<ns:RelativeIdentityDocIssueDate>2007-11-23</ns:RelativeIdentityDocIssueDate>
+												<ns:RelativeIdentityDocIssued>Отделением УФМС России</ns:RelativeIdentityDocIssued>
+											</ns:RelativeIdentityDocInfo>
+											<ns:ConfirmCognationDocInfo>
+												<ns:ConfirmCognationDocName code="4">Свидетельство о заключении брака</ns:ConfirmCognationDocName>
+												<ns:ConfirmCognationDocSeries>1-ИК</ns:ConfirmCognationDocSeries>
+												<ns:ConfirmCognationDocNumber>789632</ns:ConfirmCognationDocNumber>
+												<ns:ConfirmCognationDocIssueDate>2015-05-05</ns:ConfirmCognationDocIssueDate>
+												<ns:ConfirmCognationDocIssued>Отделением ЗАГС г. Москвы</ns:ConfirmCognationDocIssued>
+											</ns:ConfirmCognationDocInfo>
+											<ns:AddressInfo>
+												<ns:RelativeAddress>
+													<ns:FullAddress>121351, Москва г., Бобруйская ул., 4 д., 2 корп.</ns:FullAddress>
+													<ns:Index>121351</ns:Index>
+													<ns:Region code="0c5b2444-70a0-4932-980c-b4dc0d3f02b5">г. Москва</ns:Region>
+													<ns:Area code=""/>
+													<ns:City code=""/>
+													<ns:CityArea code=""/>
+													<ns:Place code=""/>
+													<ns:Street code="585eec0b-314c-4309-a497-3fe09300e903">ул. Бобруйская</ns:Street>
+													<ns:AdditionalArea code=""/>
+													<ns:AdditionalStreet code=""/>
+													<ns:House code="5956b056-0d23-4f59-9c52-f561968bdda0">4</ns:House>
+													<ns:Building1>2</ns:Building1>
+													<ns:Building2/>
+													<ns:Apartment>23</ns:Apartment>
+												</ns:RelativeAddress>
+											</ns:AddressInfo>
+											<ns:JobInfo>
+												<ns:Work>Городская поликлиника №9</ns:Work>
+												<ns:PositionWork>Медсестра</ns:PositionWork>
+											</ns:JobInfo>
+										</ns:RelativeInfo>
+									</ns:RelativesInfo>
+									<ns:ApplicationInfo>
+										<ns:ResultInfo>
+											<ns:Result code="1">На адрес электронной почты</ns:Result>
+										</ns:ResultInfo>
+										<ns:TransferInfo>
+											<ns:BankInfo>
+												<ns:DelegateINN>9856235415</ns:DelegateINN>
+												<ns:BankName>Сбербанк России</ns:BankName>
+												<ns:BIK>589545394</ns:BIK>
+												<ns:BankAccount>12345678901234567890</ns:BankAccount>
+												<ns:CorrespondentAccount>96825896545216435481</ns:CorrespondentAccount>
+												<ns:CardNumber>0002456258527854</ns:CardNumber>
+											</ns:BankInfo>
+										</ns:TransferInfo>
+									</ns:ApplicationInfo>
+								</ns:FormData>
 						</ns1:MessagePrimaryContent>
 					</ns0:SenderProvidedRequestData>
 					<st3:MessageMetadata xmlns:st3="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1">

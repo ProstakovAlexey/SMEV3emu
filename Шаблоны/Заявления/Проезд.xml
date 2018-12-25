@@ -10,15 +10,15 @@
 						<ns0:ReferenceMessageID>{MessageID}</ns0:ReferenceMessageID>
 						<ns0:TransactionCode>ignore</ns0:TransactionCode>
 						<ns1:MessagePrimaryContent xmlns:ns1="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
-							<ns:FormData oktmo="{oktmo}" xmlns:ns="http://epgu.gosuslugi.ru/hub/familyallowance/3.1.2">
+							<ns:FormData oktmo="{oktmo}" xmlns:ns="http://epgu.gosuslugi.ru/hub/faresubsidy/3.1.2">
 								<ns:orderId>{orderId}</ns:orderId>
-								<ns:ServicesType>-1000382223</ns:ServicesType>
+								<ns:ServicesType>-1000382224</ns:ServicesType>
 								<ns:Subservice code="{SubserviceCode}">{SubserviceName}</ns:Subservice>
 								<ns:Organization code="{OrganizationCode}">{OrganizationName}</ns:Organization>
 								<ns:bookId>{bookId}</ns:bookId>
 								<ns:BenefitsInfo>
 									<ns:BenefitInfo>
-										<ns:BenefitCategory code="1">Ветеран труда</ns:BenefitCategory>
+										<ns:BenefitCategory code="{CategoryCode}">{CategoryName}</ns:BenefitCategory>
 										<ns:BenefitDocName code="15">Удостоверение</ns:BenefitDocName>
 										<ns:BenefitDocSeries>12</ns:BenefitDocSeries>
 										<ns:BenefitDocNumber>123456</ns:BenefitDocNumber>

@@ -69,9 +69,9 @@ def get_time_slot(file_name):
 
 
 if __name__ == '__main__':
-    dir_name = 'Шаблоны/Справочники/Малоимущий-Приморье'
-    #time_slots = get_time_slot(os.path.join(dir_name, 'slots.txt'))
-    time_slots = list()
+    dir_name = 'Шаблоны/Справочники'
+    time_slots = get_time_slot(os.path.join(dir_name, 'slots.txt'))
+    #time_slots = list()
     orders_list = list()
     benefit = getBenefit(os.path.join(dir_name, 'SOC_BENEFIT.csv'))
     subservice = getSubservice(os.path.join(dir_name, 'SOC_SUBSERVICE.csv'))
@@ -100,13 +100,14 @@ if __name__ == '__main__':
         order =  smev3.case_num()
         change['orderId'] = order
         orders_list.append(order)
-        ts = str(uuid.uuid1()).upper()
-        change["bookId"] = ts
-        time_slots.append(ts)
-                #    time_slots[0] # Номер бронирования записи на прием
+        #ts = str(uuid.uuid1()).upper()
+
+        #time_slots.append(ts)
+        ts = time_slots[0] # Номер бронирования записи на прием
                 #script_result.append(script_shablon % (uuid.uuid1(), time_slots[0]))
-                #del time_slots[0]
-            # Подставляю в шаблон и сохраняю результат
+        del time_slots[0]
+        change["bookId"] = ts
+        # Подставляю в шаблон и сохраняю результат
         with open(os.path.join('Запросы к нам', 'Малоимущие_%s.xml' % change['orderId']), 'w', encoding='utf-8') as fp:
                 fp.write(shablon_zaiv.format(**change))
         print('{SubserviceCode}_{CategoryCode}; {SubserviceName}. {CategoryName}'.format(**change))

@@ -1,3 +1,6 @@
-<ns1:FNSUchOrgOPResponse xmlns:ns1="urn://x-artefacts-fns-uchorgop-tosmv-ru/370_68/4.0.1" ИдДок="000000000000000000000000000000000001">
-	<ns1:СвОрг АдресМНОП="643,196626,САНКТ-ПЕТЕРБУРГ Г,,,ШУШАРЫ П,ЛЕНИНА (ИЗОПЛИТ) УЛ,1А,," АдресНООП=",196600,Санкт-Петербург г,,Пушкин г,,Малая ул,14,," ДатаУчОП="18.05.2005" ИННЮЛ="7817042138" КППОП="782032001" КодНООП="7820" НаимОП="ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;СПУТНИК-СВЯЗЬ&quot;"/>
-</ns1:FNSUchOrgOPResponse>
+<ns:FormDataResponse oktmo="00000000001" xmlns:ns="http://epgu.gosuslugi.ru/hub/familyallowance/3.1.2">
+	<ns:textResponse>
+		<ns:orderId>12345678</ns:orderId>
+		<ns:result>OK</ns:result>
+	</ns:textResponse>
+</ns:FormDataResponse>

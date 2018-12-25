@@ -10,9 +10,9 @@
 						<ns0:ReferenceMessageID>{MessageID}</ns0:ReferenceMessageID>
 						<ns0:TransactionCode>ignore</ns0:TransactionCode>
 						<ns1:MessagePrimaryContent xmlns:ns1="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
-							<ns:FormData oktmo="47701000" xmlns:ns="http://epgu.gosuslugi.ru/hub/utilitypaymentsubsidy/3.1.2">
+							<ns:FormData oktmo="{oktmo}" xmlns:ns="http://epgu.gosuslugi.ru/hub/familyallowance/3.1.2">
 								<ns:orderId>{orderId}</ns:orderId>
-								<ns:ServicesType>-1000382222</ns:ServicesType>
+								<ns:ServicesType>-1000382223</ns:ServicesType>
 								<ns:Subservice code="{SubserviceCode}">{SubserviceName}</ns:Subservice>
 								<ns:Organization code="{OrganizationCode}">{OrganizationName}</ns:Organization>
 								<ns:bookId>{bookId}</ns:bookId>
@@ -28,7 +28,7 @@
 								</ns:BenefitsInfo>
 								<ns:DelegateInfo>
 									<ns:DelegateCategory code="1">Родитель</ns:DelegateCategory>
-									<ns:DelegateSurname>Тестов</ns:DelegateSurname>
+									<ns:DelegateSurname>Иванов</ns:DelegateSurname>
 									<ns:DelegateName>Иван</ns:DelegateName>
 									<ns:DelegateMiddleName>Иванович</ns:DelegateMiddleName>
 									<ns:DelegateBirthDate>1970-09-10</ns:DelegateBirthDate>
@@ -68,7 +68,7 @@
 									</ns:IncomeInfo>
 								</ns:DelegateInfo>
 								<ns:PersonInfo>
-									<ns:PersonSurname>Тестов</ns:PersonSurname>
+									<ns:PersonSurname>Иванов</ns:PersonSurname>
 									<ns:PersonName>Николай</ns:PersonName>
 									<ns:PersonMiddleName>Иванович</ns:PersonMiddleName>
 									<ns:PersonBirthDate>1993-10-20</ns:PersonBirthDate>
@@ -104,7 +104,6 @@
 											<ns:Building2/>
 											<ns:Apartment>23</ns:Apartment>
 										</ns:RegistrationAddress>
-										<ns:RegistrationDate>2013-02-01</ns:RegistrationDate>
 										<ns:ActualAddress>
 											<ns:FullAddress>121351, Москва г., Бобруйская ул., 4 д., 2 корп.</ns:FullAddress>
 											<ns:Index>121351</ns:Index>
@@ -138,16 +137,49 @@
 										<ns:IncomeSum>6000.00</ns:IncomeSum>
 									</ns:IncomeInfo>
 								</ns:PersonInfo>
+								<ns:ChildrenInfo>
+									<ns:ChildInfo>
+										<ns:ChildSurname>Иванова</ns:ChildSurname>
+										<ns:ChildName>Мария</ns:ChildName>
+										<ns:ChildMiddleName>Николаевна</ns:ChildMiddleName>
+										<ns:ChildSex>Female</ns:ChildSex>
+										<ns:ChildBirthDate>2016-10-10</ns:ChildBirthDate>
+										<ns:AddressInfo>
+											<ns:ChildAddress>
+												<ns:FullAddress>121351, Москва г., Бобруйская ул., 4 д., 2 корп.</ns:FullAddress>
+												<ns:Index>121351</ns:Index>
+												<ns:Region code="0c5b2444-70a0-4932-980c-b4dc0d3f02b5">г. Москва</ns:Region>
+												<ns:Area code=""/>
+												<ns:City code=""/>
+												<ns:CityArea code=""/>
+												<ns:Place code=""/>
+												<ns:Street code="585eec0b-314c-4309-a497-3fe09300e903">ул. Бобруйская</ns:Street>
+												<ns:AdditionalArea code=""/>
+												<ns:AdditionalStreet code=""/>
+												<ns:House code="5956b056-0d23-4f59-9c52-f561968bdda0">4</ns:House>
+												<ns:Building1>2</ns:Building1>
+												<ns:Building2/>
+												<ns:Apartment>23</ns:Apartment>
+											</ns:ChildAddress>
+										</ns:AddressInfo>
+										<ns:ChildIdentityDocInfo>
+											<ns:ChildIdentityDocName code="2">Свидетельство о рождении</ns:ChildIdentityDocName>
+											<ns:ChildIdentityDocSeries>1-ТК</ns:ChildIdentityDocSeries>
+											<ns:ChildIdentityDocNumber>652458</ns:ChildIdentityDocNumber>
+											<ns:ChildIdentityDocIssueDate>2016-10-15</ns:ChildIdentityDocIssueDate>
+											<ns:ChildIdentityDocIssued>Отделением ЗАГС г. Москвы</ns:ChildIdentityDocIssued>
+										</ns:ChildIdentityDocInfo>
+									</ns:ChildInfo>
+								</ns:ChildrenInfo>
 								<ns:RelativesInfo>
 									<ns:RelativeInfo>
-										<ns:Cognation code="2">Тестова</ns:Cognation>
+										<ns:Cognation code="2">Жена</ns:Cognation>
 										<ns:RelativeSurname>Иванова</ns:RelativeSurname>
 										<ns:RelativeName>Татьяна</ns:RelativeName>
 										<ns:RelativeMiddleName>Ивановна</ns:RelativeMiddleName>
 										<ns:RelativeBirthDate>1993-12-23</ns:RelativeBirthDate>
 										<ns:RelativeSNILS>000-121-232 44</ns:RelativeSNILS>
 										<ns:RelativePhone>+7(123)1234567</ns:RelativePhone>
-										<ns:Privileges>Получение пенсии по инвалидности</ns:Privileges>
 										<ns:RelativeIdentityDocInfo>
 											<ns:RelativeIdentityDocName code="1">Паспорт гражданина РФ</ns:RelativeIdentityDocName>
 											<ns:RelativeIdentityDocSeries>3006</ns:RelativeIdentityDocSeries>
@@ -202,7 +234,6 @@
 										<ns:Result code="1">На адрес электронной почты</ns:Result>
 									</ns:ResultInfo>
 									<ns:TransferInfo>
-										<ns:HomeSubsidy code="1">Совпадает с адресом регистрации правообладателя</ns:HomeSubsidy>
 										<ns:BankInfo>
 											<ns:DelegateINN>9856235415</ns:DelegateINN>
 											<ns:BankName>Сбербанк России</ns:BankName>
